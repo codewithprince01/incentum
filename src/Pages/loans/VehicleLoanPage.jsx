@@ -26,13 +26,13 @@ export default function VehicelLoanPage() {
   <div className="landing scroll-smooth focus:scroll-auto"
 >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 px-4 lg:px-0">
-        <div className="mt-12 lg:mt-[120px] lg:ml-[180px]">
-          <button className="mb-8 lg:mb-14">
-            <Link className="bg-primary text-white text-lg sm:text-xl px-4 sm:px-6 py-3 sm:py-4 rounded-full font-medium">
+        <div className="mt-6 lg:mt-[70px] lg:ml-[120px]">
+          <button className="mb-4 lg:mb-10">
+            <Link className="bg-primary text-white text-md sm:text-md px-2 sm:px-6 py-2 sm:py-4 rounded-full font-medium">
               VEHICLE LOAN
             </Link>
           </button>
-          <h2 className="font-bold text-[36px] sm:text-[48px] lg:text-[78px] leading-[44px] sm:leading-[60px] lg:leading-[100px]">
+          <h2 className="font-bold text-[26px] sm:text-[48px] lg:text-[58px] leading-[44px] sm:leading-[60px] lg:leading-[70px]">
             Drive The Car You've Always Dreamed Of, With Ease
           </h2>
           <div className="flex lg:hidden justify-center items-center mt-12 lg:mt-[310px]">
@@ -42,28 +42,28 @@ export default function VehicelLoanPage() {
               className="h-auto max-w-full w-[300px] sm:w-[500px] lg:w-[788px] lg:h-[549px]"
             />
           </div>
-          <p className="text-lg sm:text-xl lg:text-2xl leading-[30px] sm:leading-[35px] lg:leading-[37px] text-gray-800 mt-4 lg:mt-6">
+          <p className="text-lg sm:text-lg lg:text-lg leading-[20px] sm:leading-[25px] lg:leading-[29px] text-gray-800 mt-4 lg:mt-3">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
             ullam, asperiores, aspernatur accusantium nostrum nam ducimus
             possimus ipsum delectus ad suscipit beatae, tenetur vel corrupti
             porro veniam quaerat quis numquam magni. Et minus veritatis eius
             dolorem cum dolores dolorum animi vel ea, beatae{" "}
           </p>
-          <br />
-          <p className="text-lg sm:text-xl lg:text-2xl leading-[30px] sm:leading-[35px] lg:leading-[37px] text-gray-800">
+   
+          <p className="text-lg sm:text-lg lg:text-md leading-[20px] sm:leading-[25px] lg:leading-[29px] text-gray-800">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
             repellendus ratione dolor ipsa corporis eveniet nihil quis quia quam
             magnam aliquam commodi, consectetur aut vel! Qui, nam eligendi rem
             similique cum ratione
           </p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mt-6 lg:mt-10">
+          <h2 className="text-2xl sm:text-3xl lg:text-3xl font-bold mt-4 lg:mt-6">
             And yes, we will incentivise you too.
           </h2>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mt-2">
+          <h2 className="text-2xl sm:text-3xl lg:text-3xl font-bold mt-2">
             You are a click away from your dream car. Are you ready for the
             drive of your dreams?
           </h2>
-          <div className="flex flex-wrap gap-4 lg:gap-12 mt-8 lg:mt-12">
+          <div className="flex flex-wrap gap-4 lg:gap-12 mt-6 lg:mt-8">
             <button>
               <Link className="flex text-black text-lg sm:text-2xl border-[2px] sm:border-[3px] border-blue-800 px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-bold items-center">
                 Get Started
@@ -104,17 +104,17 @@ export default function VehicelLoanPage() {
             </button>
           </div>
         </div>
-        <div className=" justify-center hidden lg:block items-center mt-12 lg:mt-[310px]">
+        <div className=" justify-center hidden lg:block items-center  lg:mt-[70px]">
           <img
             src="/vehicleLoan/carVehicle.png"
             alt=""
-            className="h-auto max-w-full w-[300px] sm:w-[500px] lg:w-[788px] lg:ml-[170px] lg:h-[549px]"
+            className="h-auto max-w-full w-[300px] sm:w-[350px] lg:w-[650px] lg:ml-[50px] lg:h-[549px]"
           />
         </div>
       </div>
 
-      <div className=" justify-center border navborder hidden lg:block font-bold max-w-[1350px] mx-auto rounded-full mt-[170px] py-3 px-4 no-underline ">
-        <ul className="flex flex-wrap justify-center text-gray-500  lg:gap-10  xl:gap-16 text-lg lg:text-2xl xl:text-3xl py-3 xl:p-4">
+      <div className=" justify-center border navborder hidden lg:block font-bold max-w-[1000px] mx-auto rounded-full mt-[90px] py-3 px-4 no-underline ">
+        <ul className="flex flex-wrap justify-center text-gray-500  lg:gap-10  xl:gap-10 text-lg lg:text-xl xl:text-2xl py-1 xl:p-1">
           <li>
             <a href="#Eligibility" onClick={(e)=>{
               e.preventDefault();
