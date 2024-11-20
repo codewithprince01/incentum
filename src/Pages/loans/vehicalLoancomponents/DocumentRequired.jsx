@@ -20,28 +20,28 @@ export default function DocumentRequired() {
 
     const sections = [
         {
-            heading: "Select Your Preference",
+            heading: "Proof Of Identity",
             content: "Your credit score is a critical factor in determining your eligibility. It reflects your financial history and reliability.",
             icon: (
                 <BsSpeedometer2 className='w-8 lg:w-10 h-8 lg:h-10' />
             ),
         },
         {
-            heading: "Gather Documents",
+            heading: "Proof Of Address",
             content: "Stable income ensures you have the capacity to repay any financial commitments you make.",
             icon: (
               <IoDocumentTextOutline className='w-8 lg:w-10 h-8 lg:h-10' />
             ),
         },
         {
-            heading: "Complete Application",
+            heading: "Employment History",
             content: "Consistent employment history shows financial reliability and the ability to sustain regular payments.",
             icon: (
               <IoMdContacts className='w-8 lg:w-10 h-8 lg:h-10' />
             ),
         },
         {
-            heading: "Upload Documents",
+            heading: "Proof Of Employment",
             content: "This ratio measures your ability to manage debts. A lower ratio increases your chances of approval.",
             icon: (
               <TbListDetails className='w-8 lg:w-10 h-8 lg:h-10' />
@@ -49,21 +49,21 @@ export default function DocumentRequired() {
             ),
         },
         {
-            heading: "Dont't Wait For Approval",
+            heading: "Proof Of Income",
             content: "Your residency status and location may impact your eligibility based on local regulations.",
             icon: (
               <MdOutlineDataExploration className='w-8 lg:w-10 h-8 lg:h-10' />
             ),
         },
         {
-            heading: "Review Loan Terms",
+            heading: "Proof Of liability",
             content: "Your residency status and location may impact your eligibility based on local regulations.",
             icon: (
               <MdOutlineDataExploration className='w-8 lg:w-10 h-8 lg:h-10' />
             ),
         },
         {
-            heading: "Finalize Your Purchase",
+            heading: "Vehicle Information",
             content: "Your residency status and location may impact your eligibility based on local regulations.",
             icon: (
               <MdOutlineDataExploration className='w-8 lg:w-10 h-8 lg:h-10' />
@@ -74,11 +74,14 @@ export default function DocumentRequired() {
 
     
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0 mt-[110px]mt-[100px]" id='apply'>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0 mt-[110px]" id='Documents'>
     <div className="mt-[50px] lg:mt-[90px] mx-6 lg:ml-[200px]">
-        <h1 className="text-[40px] lg:text-[70px] font-bold heading  " >How To Apply</h1>
+        <h1 className="text-[40px] lg:text-[70px] font-bold heading " >Document Required</h1>
+        <p className="text-[20px] lg:text-[30px] font-medium mt-4 leading-[30px] lg:leading-[40px] text-white">
+            Document You'll Need for Your Loan
+        </p>
         <p className="text-[20px] lg:text-[30px] font-medium leading-[30px] lg:leading-[40px] text-white">
-           Getting a car loan should be stress-free, and we're here to make sure of that. Just follow these simple steps:
+            To make your car loan proce quick ans easy, make sure you have the following
         </p>
         <div className="mt-10 lg:mt-14">
             {sections.map((section,index)=>(
@@ -113,7 +116,7 @@ export default function DocumentRequired() {
     </div>
     <div className="flex justify-center lg:justify-start">
         <img
-            src="/apply.png"
+            src="/vehicleLoan/documentrequired.png"
             alt="Eligibility Illustration"
             className="mt-[50px] lg:mt-[90px]  sm:w-[700px] sm:[600px] lg:w-[800px] lg:h-[600px] lg:ml-[130px] imgBorder rounded-lg"
         />

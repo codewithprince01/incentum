@@ -113,7 +113,7 @@ export default function DocumentRequired() {
     </div>
     <div className="flex justify-center lg:justify-start">
         <img
-            src="/offer.png"
+            src="/vehicleLoan/offer.png"
             alt="Eligibility Illustration"
             className="mt-[50px] lg:mt-[90px]  sm:w-[700px] sm:[600px] lg:w-[800px] lg:h-[600px] lg:ml-[130px] imgBorder rounded-lg"
         />

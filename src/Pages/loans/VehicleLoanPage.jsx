@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Eligibility from "../../components/carloan/Eligibility";
-import DocumentRequired from "../../components/carloan/DocumentRequired";
-import Offer from "../../components/carloan/Offer";
-import Apply from "../../components/carloan/Apply";
-import { GiAndroidMask } from "react-icons/gi";
+import Eligibility from "./vehicalLoancomponents/Eligibility";
+import DocumentRequired from "./vehicalLoancomponents/DocumentRequired";
+import Offer from "./vehicalLoancomponents/Offer";
+import Apply from "./vehicalLoancomponents/Apply";
 
 export default function VehicelLoanPage() {
   const [activeSection, setActiveSection] = useState("");
@@ -107,7 +106,7 @@ export default function VehicelLoanPage() {
         </div>
         <div className=" justify-center hidden lg:block items-center mt-12 lg:mt-[310px]">
           <img
-            src="/carVehicle.png"
+            src="/vehicleLoan/carVehicle.png"
             alt=""
             className="h-auto max-w-full w-[300px] sm:w-[500px] lg:w-[788px] lg:ml-[170px] lg:h-[549px]"
           />
