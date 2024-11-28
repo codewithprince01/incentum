@@ -5,6 +5,7 @@ import homeloan from '../../../assets/homeloan.webp';
 import vehicleloan from '../../../assets/vehicleloan.webp';
 import personalloan from '../../../assets/personalloan.webp';
 import businessloan from '../../../assets/businessloan.webp';
+import incentmbenfi from '../../../assets/incentmbenfi.webp';
 
 const FeaturesSection = () => {
   const [activeTab, setActiveTab] = useState("home-loan");
@@ -16,6 +17,7 @@ const FeaturesSection = () => {
   };
 
   return (
+    <>
     <div className="bg-[#e5e5e5]">
       {/* Header Navbar */}
       <div className="sticky top-0 z-10 ">
@@ -172,7 +174,19 @@ const FeaturesSection = () => {
         </div>
       </div>
     </div>
+
+      <div className="">
+      <img
+        src={incentmbenfi}
+        alt="Business Loan Graph"
+        className="rounded-lg"
+      />
+      </div>
+
+</>
   );
 };
+
+        
 
 export default FeaturesSection;

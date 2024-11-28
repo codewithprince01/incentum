@@ -20,7 +20,7 @@ function App() {
         <Route path="/" element={<HeroSection />} />
         <Route path="/" element={<FeaturesSection />} />
         <Route path='/vehicle-loan' element={<VehicleLoanPage/>} />
-
+        <Route path='/HomePage' element={<HomePage/>} />
         </Route>
       </Routes>
     </Router>
