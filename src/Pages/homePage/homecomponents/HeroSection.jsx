@@ -10,8 +10,6 @@ const HeroSection = () => {
       style={{ backgroundImage: `url(${backgroundimage})`,
       backgroundSize: "120% 100%" }}
     >
-      <div className="flex flex-col items-center justify-center h-full text-white">
-      </div>
     <section className="bg-transparent text-white relative py-64 px-8 mb-96 md:px-16">
     <div className="absolute top-2 left-1/2 transform -translate-x-1/2 bg-blue-800/50 border border-blue-500 rounded-full px-8 py-1 mt-36  text-sm flex items-center gap-2">
   <span className=" text-xl text-white">✨</span>
