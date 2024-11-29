@@ -8,7 +8,7 @@ const HeroSection = () => {
      <div
       className=" min-h-screen bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${backgroundimage})`,
-      backgroundSize: "110% 100%" }}
+      backgroundSize: "120% 100%" }}
     >
       <div className="flex flex-col items-center justify-center h-full text-white">
       </div>

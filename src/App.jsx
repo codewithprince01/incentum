@@ -23,9 +23,11 @@ function App() {
         <Route path="/" element={<HeroSection />} />
         <Route path="/" element={<FeaturesSection />} />
         <Route path='/vehicle-loan' element={<VehicleLoanPage/>} />
+        <Route path='/HomePage' element={<HomePage/>} />
         <Route path='home-loan' element={<HomeLoan/>}/>
         <Route path='personal-loan' element={<PersonalLoan/>}/>
         <Route path='business-loan' element={<BusinessLoan/>}/>
+
         </Route>
       </Routes>
     </Router>

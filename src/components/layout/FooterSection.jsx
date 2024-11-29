@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   return (
@@ -6,17 +6,17 @@ const Footer = () => {
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-6">
         {/* Left Section */}
         <div className="col-span-2">
-          <h1 className="text-3xl font-bold">INCENTUM</h1>
-          <p className="mt-4 text-l">
+          <h1 className="text-2xl md:text-3xl font-bold">INCENTUM</h1>
+          <p className="mt-4 text-sm md:text-base">
             INCENTUM is the best platform to buy, sell, and exchange multiple loans with ease.
           </p>
-          <div className="mt-6 flex">
+          <div className="mt-6 flex flex-col sm:flex-row space-y-4 sm:space-y-0">
             <input
               type="email"
               placeholder="Your email"
-              className="px-4 py-2 text-l text-black focus:outline-none rounded-3xl"
+              className="px-4 py-2 text-sm md:text-base text-black focus:outline-none rounded-3xl w-full sm:w-auto"
             />
-            <button className="bg-blue-600 px-4 py-2 text-l font-bold rounded-3xl">
+            <button className="bg-blue-600 px-4 py-2 text-sm md:text-base font-bold rounded-3xl sm:ml-4">
               Subscribe
             </button>
           </div>
@@ -26,8 +26,8 @@ const Footer = () => {
         <div className="col-span-3 grid grid-cols-2 md:grid-cols-4 gap-6">
           {/* Company Section */}
           <div>
-            <h1 className="text-xl font-bold uppercase">Company</h1>
-            <ul className="mt-4 space-y-2 text-l">
+            <h1 className="text-base md:text-xl font-bold uppercase">Company</h1>
+            <ul className="mt-4 space-y-2 text-sm md:text-base">
               <li>About</li>
               <li>Contact</li>
               <li>Affiliates</li>
@@ -38,8 +38,8 @@ const Footer = () => {
 
           {/* Products Section */}
           <div>
-            <h3 className="text-xl font-bold uppercase">Products</h3>
-            <ul className="mt-4 space-y-2 text-l">
+            <h3 className="text-base md:text-xl font-bold uppercase">Products</h3>
+            <ul className="mt-4 space-y-2 text-sm md:text-base">
               <li>Buy</li>
               <li>Sell</li>
               <li>Swap</li>
@@ -50,8 +50,8 @@ const Footer = () => {
 
           {/* Learn Section */}
           <div>
-            <h3 className="text-xl font-bold uppercase">Learn</h3>
-            <ul className="mt-4 space-y-2 text-l">
+            <h3 className="text-base md:text-xl font-bold uppercase">Learn</h3>
+            <ul className="mt-4 space-y-2 text-sm md:text-base">
               <li>Blog</li>
               <li>Support</li>
               <li>Pricing</li>
@@ -62,8 +62,8 @@ const Footer = () => {
 
           {/* Legal Section */}
           <div>
-            <h3 className="text-xl font-bold uppercase">Legal</h3>
-            <ul className="mt-4 space-y-2 text-l">
+            <h3 className="text-base md:text-xl font-bold uppercase">Legal</h3>
+            <ul className="mt-4 space-y-2 text-sm md:text-base">
               <li>AML Policy</li>
               <li>Privacy Policy</li>
               <li>Terms of Service</li>
@@ -74,9 +74,11 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="border-t border-gray-400 mt-10 ml-24 pt-6 flex flex-col md:flex-row justify-between text-l">
-       <p>Statutory legal information</p>
-       <p className="mr-24">2024-2025 Incentum | Site Map | Privacy Policy</p>
+      <div className="border-t border-gray-400 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center text-sm md:text-base">
+        <p className="text-center sm:text-left">Statutory legal information</p>
+        <p className="text-center sm:text-right mt-4 sm:mt-0">
+          2024-2025 Incentum | Site Map | Privacy Policy
+        </p>
       </div>
     </footer>
   );

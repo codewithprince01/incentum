@@ -4,31 +4,11 @@ const FAQSection = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const faqs = [
-    { id: 1, 
-      question: "How long my application process took", 
-      answer: "Around 30 days" },
-    {
-      id: 2,
-      question: "What we like to do & what we don’t like to do",
-      answer:
-        "ETC",
-    },
-    {
-      id: 3,
-      question:
-        "Your charges.",
-      answer: "nil",
-    },
-    {
-      id: 4,
-      question: "CIBIL score Required",
-      answer: "700+",
-    },
-    {
-      id: 5,
-      question: "Salary required",
-      answer: "20000",
-    },
+    { id: 1, question: "How long my application process took", answer: "Around 30 days" },
+    { id: 2, question: "What we like to do & what we don’t like to do", answer: "ETC" },
+    { id: 3, question: "Your charges.", answer: "nil" },
+    { id: 4, question: "CIBIL score Required", answer: "700+" },
+    { id: 5, question: "Salary required", answer: "20000" },
   ];
 
   const toggleAccordion = (index) => {
@@ -36,11 +16,10 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="bg-gradient-to-b from-[#010080] to-[#0A1536] py-1 ">
-      <div className="container rounded-3xl py-16 px-96
-       max-w-auto  h-auto mx-auto">
-        <h2 className="text-white text-4xl font-semibold text-center mb-20">
-          Frequently asked questions
+    <section className="bg-gradient-to-b from-[#010080] to-[#0A1536] py-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12 max-w-5xl">
+        <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-semibold text-center mb-10 sm:mb-16">
+          Frequently Asked Questions
         </h2>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
@@ -54,7 +33,7 @@ const FAQSection = () => {
             >
               <button
                 onClick={() => toggleAccordion(index)}
-                className="w-full flex justify-between items-center p-4 text-left text-white font-normal focus:outline-none"
+                className="w-full flex justify-between items-center p-4 text-left text-white font-medium focus:outline-none"
               >
                 {faq.question}
                 <span
