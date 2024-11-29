@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Eligibility from "./vehicalLoancomponents/Eligibility";
-import DocumentRequired from "./vehicalLoancomponents/DocumentRequired";
-import Offer from "./vehicalLoancomponents/Offer";
-import Apply from "./vehicalLoancomponents/Apply";
+import Eligibility from "./businessLoanComponent/Eligibility";
+import DocumentRequired from "./businessLoanComponent/DocumentRequired";
+import Apply from "./businessLoanComponent/Apply";
+import Offer from "./businessLoanComponent/Offer";
 
 export default function VehicelLoanPage() {
   const [activeSection, setActiveSection] = useState("");
@@ -26,7 +26,7 @@ export default function VehicelLoanPage() {
         <div className="mt-6 lg:mt-[55px] lg:ml-[120px]">
           <button className="mb-4 lg:mb-8">
             <Link className="bg-primary text-white text-md sm:text-md px-2 sm:px-6 py-2 sm:py-4 rounded-full font-medium">
-              VEHICLE LOAN
+             BUSINESS LOAN
             </Link>
           </button>
           <h2 className="font-bold text-[26px] sm:text-[48px] lg:text-[55px] leading-[44px] sm:leading-[60px] lg:leading-[60px]">
@@ -34,7 +34,7 @@ export default function VehicelLoanPage() {
           </h2>
           <div className="flex lg:hidden justify-center items-center mt-12 lg:mt-[310px]">
             <img
-              src="/vehicleLoan/carGIf.gif"
+              src="/businessLoan/busenessLoan.gif"
               alt=""
               className="h-auto max-w-full w-[300px] sm:w-[500px] lg:w-[788px] lg:h-[549px]"
             />
@@ -96,7 +96,7 @@ export default function VehicelLoanPage() {
         </div>
         <div className=" justify-center hidden lg:block items-center  lg:mt-[70px]">
           <img
-           src="/vehicleLoan/carGIf.gif"
+            src="/businessLoan/busenessLoan.gif"
             alt=""
             className="h-auto max-w-full w-[300px] sm:w-[350px] lg:w-[650px] lg:ml-[50px] lg:h-[549px]"
           />
@@ -148,11 +148,13 @@ export default function VehicelLoanPage() {
           </li>
         </ul>
       </div>
-
-      <Eligibility id="Eligibility"/>
-      <DocumentRequired id="Documents"/>
+      <Eligibility id="Eligibility" />
+      <DocumentRequired id="Documents" />
       <Apply id="apply"/>
       <Offer id="offer"/>
+
+
+      
       </div>
     </>
   );
