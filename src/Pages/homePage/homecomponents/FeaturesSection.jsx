@@ -71,9 +71,14 @@ const FeaturesSection = () => {
                 financial decisions you'll ever make. That’s why we’ve developed
                 AI-powered home loan solutions that give you access...
               </p>
-              <button className="mt-6 px-6 py-3 bg-white text-black rounded-xl hover:bg-blue-200 transition">
+              <div className="mt-10">
+              <Link
+                to="/home-loan"
+                className="mt-10 px-6 py-3 bg-white text-black rounded-xl hover:bg-blue-200 transition"
+              >
                 Know More
-              </button>
+              </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -136,9 +141,14 @@ const FeaturesSection = () => {
                 Whether you're a first-time buyer or looking to refinance, our
                 expert team is here to guide you every step of the way.
               </p>
-              <button className="mt-6 px-6 py-3 bg-white text-black rounded-xl hover:bg-blue-200 transition">
+              <div className="mt-10">
+              <Link
+                to="/personal-loan"
+                className="mt-10 px-6 py-3 bg-white text-black rounded-xl hover:bg-blue-200 transition"
+              >
                 Know More
-              </button>
+              </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -166,9 +176,14 @@ const FeaturesSection = () => {
                 Whether you're a first-time buyer or looking to refinance, our
                 expert team is here to guide you every step of the way.
               </p>
-              <button className="mt-6 px-6 py-3 bg-white text-black rounded-xl hover:bg-blue-200 transition">
+              <div className="mt-10">
+              <Link
+                to="/business-loan"
+                className="mt-10 px-6 py-3 bg-white text-black rounded-xl hover:bg-blue-200 transition"
+              >
                 Know More
-              </button>
+              </Link>
+              </div>
             </div>
           </div>
         </div>

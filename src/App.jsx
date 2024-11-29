@@ -7,6 +7,9 @@ import FeaturesSection from './Pages/homePage/homecomponents/FeaturesSection';
 import VehicleLoanPage from './Pages/loans/VehicleLoanPage';
 import Layout from './components/layout/Layout';
 import HomePage from './Pages/homePage/HomePage';
+import HomeLoan from './Pages/loans/HOmeLoan';
+import PersonalLoan from './Pages/loans/PersonalLoan';
+import BusinessLoan from './Pages/loans/BusinessLoan';
 
 
 function App() {
@@ -21,6 +24,10 @@ function App() {
         <Route path="/" element={<FeaturesSection />} />
         <Route path='/vehicle-loan' element={<VehicleLoanPage/>} />
         <Route path='/HomePage' element={<HomePage/>} />
+        <Route path='home-loan' element={<HomeLoan/>}/>
+        <Route path='personal-loan' element={<PersonalLoan/>}/>
+        <Route path='business-loan' element={<BusinessLoan/>}/>
+
         </Route>
       </Routes>
     </Router>
