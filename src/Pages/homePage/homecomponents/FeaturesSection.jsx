@@ -18,32 +18,32 @@ const FeaturesSection = () => {
 
   return (
     <>
-    <div className="bg-[#e5e5e5]">
-      {/* Header Navbar */}
-      <div className="sticky top-0 z-10 ">
-        <div className="container mx-auto flex justify-center py-6">
-          <div className="flex bg-gradient-to-b from-[#f5fafe] to-[#ebecf6] shadow-md rounded-full px-6 py- space-x-6 border border-[#14296d]">
-            {[
-              { id: "home-loan", label: "Home Loan" },
-              { id: "car-loan", label: "Car Loan" },
-              { id: "personal-loan", label: "Personal Loan" },
-              { id: "business-loan", label: "Business Loan" },
-            ].map((tab) => (
-              <button
-                key={tab.id}
-                className={`px-7 py-3 rounded-full text-xl font-semibold ${
-                  activeTab === tab.id
-                    ? "text-black font-bold bg-gradient-to-r from-[#f5fafe] to-[#ffffff]"
-                    : "text-gray-500 hover:text-black"
-                }`}
-                onClick={() => scrollToSection(tab.id)}
-              >
-                {tab.label}
-              </button>
-            ))}
+      <div className="bg-[#e5e5e5]">
+        {/* Header Navbar */}
+        <div className="sticky top-0 z-10">
+          <div className="container mx-auto flex justify-center py-4">
+            <div className="flex bg-gradient-to-b from-[#f5fafe] to-[#ebecf6] shadow-md rounded-full px-4 py-3 space-x-3 sm:space-x-6 border border-[#14296d]">
+              {[
+                { id: "home-loan", label: "Home Loan" },
+                { id: "car-loan", label: "Car Loan" },
+                { id: "personal-loan", label: "Personal Loan" },
+                { id: "business-loan", label: "Business Loan" },
+              ].map((tab) => (
+                <button
+                  key={tab.id}
+                  className={`px-4 sm:px-7 py-2 sm:py-3 rounded-full text-sm sm:text-xl font-semibold ${
+                    activeTab === tab.id
+                      ? "text-black font-bold bg-gradient-to-r from-[#f5fafe] to-[#ffffff]"
+                      : "text-gray-500 hover:text-black"
+                  }`}
+                  onClick={() => scrollToSection(tab.id)}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
 
       {/* Loan Sections */}
       <div className="container mx-auto p-4 space-y-10">
@@ -175,7 +175,7 @@ const FeaturesSection = () => {
       </div>
     </div>
 
-      <div className="">
+      <div className="py-10 sm:py-14 max-w-7xl h-auto mx-auto">
       <img
         src={incentmbenfi}
         alt="Business Loan Graph"

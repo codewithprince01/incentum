@@ -42,29 +42,29 @@ export default function SignupPage() {
       </div>
 
       {/* Right Section - Form */}
-      <div className="flex items-center justify-center bg-opacity-80">
-        <div className="w-full max-w-lg p-6 sm:p-10 bg-white bg-opacity-10 backdrop-blur-md border border-gray-700 rounded-lg shadow-lg">
-          <h2 className="text-gray-200 text-3xl sm:text-4xl font-bold mb-4">
+      <div className="flex items-center justify-center p-6 bg-opacity-80">
+        <div className="w-full max-w-md p-4 sm:p-6 bg-white bg-opacity-10 backdrop-blur-md border border-gray-700 rounded-lg shadow-lg">
+          <h2 className="text-gray-200 text-2xl sm:text-3xl font-bold mb-7">
             Login
           </h2>
-          <p className="text-gray-400 text-lg sm:text-xl mb-6">
+          <p className="text-gray-400 text-lg sm:text-lg mb-7">
             Glad you're back!
           </p>
 
           <form onSubmit={handleFormSubmit}>
             {/* Phone Number Input */}
-            <div className="mb-6">
+            <div className="mb-7">
               <input
                 type="tel"
                 placeholder="Enter your Mobile Number"
-                className="w-full p-4 text-lg border border-gray-300 rounded-lg bg-transparent placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 text-lg border border-gray-300 rounded-lg bg-transparent placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)}
               />
             </div>
 
             {/* Remember Me Checkbox */}
-            <div className="flex items-center mb-6">
+            <div className="flex items-center mb-7">
               <input
                 type="checkbox"
                 id="rememberMe"
@@ -87,7 +87,7 @@ export default function SignupPage() {
             </button>
 
             {/* Divider */}
-            <div className="flex items-center justify-center my-6">
+            <div className="flex items-center justify-center my-7">
               <div className="w-1/3 border-t border-gray-500"></div>
               <span className="mx-4 text-gray-500 text-lg sm:text-xl font-bold">
                 Or
@@ -95,26 +95,8 @@ export default function SignupPage() {
               <div className="w-1/3 border-t border-gray-500"></div>
             </div>
 
-            {/* Social Links */}
-            <div className="flex justify-center gap-6">
-              <Link to="https://www.google.com">
-                <img
-                  src="/googleLogo.png"
-                  alt="Google"
-                  className="w-10 sm:w-12 h-10 sm:h-12"
-                />
-              </Link>
-              <Link to="https://www.facebook.com">
-                <img
-                  src="/fbLogo.png"
-                  alt="Facebook"
-                  className="w-10 sm:w-12 h-10 sm:h-12"
-                />
-              </Link>
-            </div>
-
             {/* Signup Link */}
-            <p className="text-center text-gray-400 text-lg sm:text-xl mt-8">
+            <p className="text-center text-gray-400 text-lg sm:text-xl mt-10">
               Don't have an account?{" "}
               <Link
                 to="/signup-Page"
@@ -125,7 +107,7 @@ export default function SignupPage() {
             </p>
 
             {/* Footer Links */}
-            <div className="flex justify-center gap-4 text-gray-500 text-sm sm:text-base mt-6">
+            <div className="flex justify-center gap-4 text-gray-500 text-sm sm:text-base mt-7">
               <Link to="#">Terms & Conditions</Link>
               <Link to="#">Support</Link>
               <Link to="#">Customer Care</Link>
