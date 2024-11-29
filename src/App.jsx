@@ -26,6 +26,7 @@ function App() {
         <Route path='home-loan' element={<HomeLoan/>}/>
         <Route path='personal-loan' element={<PersonalLoan/>}/>
         <Route path='business-loan' element={<BusinessLoan/>}/>
+        <Route path='/HomePage' element={<HomePage/>} />
         </Route>
       </Routes>
     </Router>

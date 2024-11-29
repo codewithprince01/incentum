@@ -4,6 +4,7 @@ import Eligibility from "./homeloancomponents/Eligibility";
 import DocumentRequired from "./homeloancomponents/DocumentRequired";
 import Apply from "./homeloancomponents/Apply";
 import Offer from "./homeloancomponents/Offer";
+import EmiCalculator from "../homePage/homecomponents/EmiCalculator";
 
 
 export default function VehicelLoanPage() {
@@ -154,6 +155,7 @@ export default function VehicelLoanPage() {
       <DocumentRequired id="Documents" />
       <Apply id="apply"/>
       <Offer id="offer"/>
+      <EmiCalculator/>
       </div>
     </>
   );

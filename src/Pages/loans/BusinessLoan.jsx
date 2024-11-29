@@ -4,6 +4,7 @@ import Eligibility from "./businessLoanComponent/Eligibility";
 import DocumentRequired from "./businessLoanComponent/DocumentRequired";
 import Apply from "./businessLoanComponent/Apply";
 import Offer from "./businessLoanComponent/Offer";
+import EmiCalculator from "../homePage/homecomponents/EmiCalculator";
 
 export default function VehicelLoanPage() {
   const [activeSection, setActiveSection] = useState("");
@@ -152,6 +153,7 @@ export default function VehicelLoanPage() {
       <DocumentRequired id="Documents" />
       <Apply id="apply"/>
       <Offer id="offer"/>
+      <EmiCalculator/>
 
 
       
