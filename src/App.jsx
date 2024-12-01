@@ -4,12 +4,12 @@ import SignupPage from './Pages/authentication/SignupPage';
 import LoginPage from './Pages/authentication/LoginPage';
 import HeroSection from './Pages/homePage/homecomponents/HeroSection';
 import FeaturesSection from './Pages/homePage/homecomponents/FeaturesSection';
-import VehicleLoanPage from './Pages/loans/VehicleLoanPage';
 import Layout from './components/layout/Layout';
 import HomePage from './Pages/homePage/HomePage';
-import HomeLoan from './Pages/loans/HOmeLoan';
-import PersonalLoan from './Pages/loans/PersonalLoan';
-import BusinessLoan from './Pages/loans/BusinessLoan';
+import HomeLoan from './Pages/loans/homeLoan/HomeLoan';
+import VehicelLoan from './Pages/loans/vehicleLoan/VehicleLoan';
+import PersonalLoan from './Pages/loans/personalLoan/PersonalLoan';
+import BusinessLoan from './Pages/loans/businessLoan/BusinessLoan';
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
         <Route path="/Login-Page" element={<LoginPage/>} />
         <Route path="/" element={<HeroSection />} />
         <Route path="/" element={<FeaturesSection />} />
-        <Route path='/vehicle-loan' element={<VehicleLoanPage/>} />
+        <Route path='vehicle-loan' element={<VehicelLoan/>}/>
         <Route path='home-loan' element={<HomeLoan/>}/>
         <Route path='personal-loan' element={<PersonalLoan/>}/>
         <Route path='business-loan' element={<BusinessLoan/>}/>

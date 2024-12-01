@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Eligibility from "./personalLoanComponents/Eligibility";
-import DocumentRequired from "./personalLoanComponents/DocumentRequired";
-import Apply from "./personalLoanComponents/Apply";
-import Offer from "./personalLoanComponents/Offer";
-import EmiCalculator from "../homePage/homecomponents/EmiCalculator";
+import EmiCalculator from "../../homePage/homecomponents/EmiCalculator";
+import VehicleAccordion from "./VehicleAccordion";
 
 
-export default function VehicelLoanPage() {
+export default function VehicelLoan() {
   const [activeSection, setActiveSection] = useState("");
 
 
@@ -22,13 +19,14 @@ export default function VehicelLoanPage() {
 
   return (
     <>
-  <div className="landing scroll-smooth focus:scroll-auto"
+  <div className=" scroll-smooth focus:scroll-auto"
 >
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 px-4 lg:px-0">
+     <div className="landingheader">
+      <div className="  grid grid-cols-1 lg:grid-cols-2 gap-6 px-4 lg:px-0">
         <div className="mt-6 lg:mt-[55px] lg:ml-[120px]">
           <button className="mb-4 lg:mb-8">
-            <Link className="bg-primary text-white text-md sm:text-md px-2 sm:px-6 py-2 sm:py-4 rounded-full font-medium">
-             PERSONAL LOAN
+            <Link className="bg-primary text-white text-md sm:text-md px-4 py-3 md:px-6  md:py-4 rounded-full font-medium">
+             VEHICLE LOAN
             </Link>
           </button>
           <h2 className="font-bold text-[26px] sm:text-[48px] lg:text-[55px] leading-[44px] sm:leading-[60px] lg:leading-[60px]">
@@ -36,7 +34,7 @@ export default function VehicelLoanPage() {
           </h2>
           <div className="flex lg:hidden justify-center items-center mt-12 lg:mt-[310px]">
             <img
-              src="/personalLoan/personalgif.gif"
+              src="/vehicleloanimg/carGIf.gif"
               alt=""
               className="h-auto max-w-full w-[300px] sm:w-[500px] lg:w-[788px] lg:h-[549px]"
             />
@@ -48,16 +46,16 @@ export default function VehicelLoanPage() {
           <p className="text-lg sm:text-lg lg:text-[15px]  leading-[20px] sm:leading-[25px] lg:leading-[29px] text-gray-800">
             We bring you any and every feature of car loan being offered by indian financial institution. Be it flexible repayment options, competitive rate, and quick approval, we take care of the complicated stuff so you can focus on what matters most-enjoying the road ahead.
           </p>
-          <h2 className="text-2xl sm:text-3xl lg:text-2xl font-bold mt-4 lg:mt-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-2xl  mt-4 lg:mt-6">
             And yes, we will incentivise you too.
           </h2>
-          <h2 className="text-2xl sm:text-3xl lg:text-2xl font-bold ">
+          <h2 className="text-2xl sm:text-3xl lg:text-2xl ">
             You are a click away from your dream car. Are you ready for the
             drive of your dreams?
           </h2>
           <div className="flex flex-wrap gap-4 lg:gap-12 mt-6 lg:mt-10">
             <button>
-              <Link className="flex text-black text-lg sm:text-2xl border-[2px] sm:border-[3px] border-blue-800 px-4 sm:px-4 py-2 sm:py-2 rounded-xl font-bold items-center">
+              <Link className="flex text-black text-lg sm:text-xl border-[2px] sm:border-[3px] border-blue-800 px-4 sm:px-4 py-2 sm:py-2 rounded-xl  items-center">
                 Get Started
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +74,7 @@ export default function VehicelLoanPage() {
               </Link>
             </button>
             <button>
-              <Link className="flex text-white text-lg sm:text-2xl bg-primary px-4 sm:px-4 py-2 sm:py-3  rounded-xl font-bold items-center">
+              <Link className="flex text-white text-lg sm:text-xl border-[2px] sm:border-[3px] bg-primary border-primary px-4 sm:px-4 py-2 sm:py-2 rounded-xl  items-center">
                 Contact Sales
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -98,14 +96,16 @@ export default function VehicelLoanPage() {
         </div>
         <div className=" justify-center hidden lg:block items-center  lg:mt-[70px]">
           <img
-            src="/personalLoan/personalgif.gif"
+            src="/vehicleloanimg/carGIf.gif"
             alt=""
-            className="h-auto max-w-full w-[300px] sm:w-[350px] lg:w-[5000px] lg:ml-[50px] lg:h-[459px]"
+            className="h-auto max-w-full w-[300px] sm:w-[350px] lg:w-[650px] lg:ml-[50px] lg:h-[549px]"
           />
         </div>
       </div>
-
-      <div className=" justify-center border navborder hidden lg:block font-bold max-w-[1000px] mx-auto rounded-full mt-[130px] py-3 px-4 no-underline ">
+      </div>
+       
+       <div className="landingfooter">
+      <div className=" justify-center border navborder hidden lg:block font-bold max-w-[1000px] mx-auto rounded-full py-3 px-4 mt-[60px] no-underline ">
         <ul className="flex flex-wrap justify-center text-gray-500  lg:gap-10  xl:gap-10 text-lg lg:text-xl xl:text-2xl py-1 xl:p-1">
           <li>
             <a href="#Eligibility" onClick={(e)=>{
@@ -150,15 +150,9 @@ export default function VehicelLoanPage() {
           </li>
         </ul>
       </div>
-
-      <Eligibility id="Eligibility" />
-      <DocumentRequired id="Documents" />
-      <Apply id="apply" />
-      <Offer if="offer"/>
+       <VehicleAccordion/>
       <EmiCalculator/>
-
-
-  
+      </div>
       </div>
     </>
   );
