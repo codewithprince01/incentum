@@ -21,8 +21,8 @@ const FeaturesSection = () => {
       <div className="bg-[#e5e5e5]">
         {/* Header Navbar */}
         <div className="sticky top-0 z-10">
-          <div className="container mx-auto flex justify-center py-4">
-            <div className="flex bg-gradient-to-b from-[#f5fafe] to-[#ebecf6] shadow-md rounded-full px-4 py-3 space-x-3 sm:space-x-6 border border-[#14296d]">
+          <div className="container mx-auto flex justify-center py-5">
+            <div className="flex bg-gradient-to-b from-[#f5fafe] to-[#ebecf6] shadow-md rounded-full px-2 py-0 space-x-3 sm:space-x-6 border border-[#14296d]">
               {[
                 { id: "home-loan", label: "Home Loan" },
                 { id: "car-loan", label: "Car Loan" },
@@ -46,16 +46,19 @@ const FeaturesSection = () => {
         </div>
 
       {/* Loan Sections */}
-      <div className="container mx-auto p-4 space-y-10">
-        {/* Home Loan */}
-        <div id="home-loan" className="min-h-2 flex items-center justify-center">
+      <div className="container mx-auto p-1 space-y-10">
+      {/* Home Loan */}
+        <div id="home-loan" className="min-h-2 flex items-center justify-center  hover:bg-white transition-colors duration-200">
           <div className="flex p-8 md:flex-row flex-col max-w-6xl">
-            <div className="bg-blue-900 rounded-lg flex justify-center items-center md:w-1/2">
+            <div className="bg-blue-900 rounded-lg flex justify-center mr-10 items-center md:w-1/2 ">
+            <Link
+                to="/home-loan" >
               <img
                 src={homeloan}
                 alt="Home Loan Graph"
                 className="rounded-lg"
               />
+              </Link>
             </div>
             <div className="p-9 md:w-2/3">
               <span className="bg-blue-900 text-white text-lg px-6 py-3 rounded-full">
@@ -74,9 +77,9 @@ const FeaturesSection = () => {
               <div className="mt-10">
               <Link
                 to="/home-loan"
-                className="mt-10 px-6 py-3 bg-white text-black rounded-xl hover:bg-blue-200 transition"
+                className="mt-10 px-6 py-3 bg-white text-black rounded-xl border border-black hover:bg-yellow-300 transition"
               >
-                Know More
+                Know More →
               </Link>
               </div>
             </div>
@@ -84,14 +87,18 @@ const FeaturesSection = () => {
         </div>
 
         {/* Vehical Loan */}
-        <div id="car-loan" className="min-h-2 flex items-center justify-center">
+        <div id="car-loan" className="min-h-2 flex items-center justify-center hover:bg-white transition-colors ">
           <div className="flex p-8 md:flex-row flex-col max-w-6xl">
-            <div className="bg-blue-900 rounded-lg flex justify-center items-center md:w-1/2">
+            <div className="bg-blue-900 rounded-lg flex justify-center mr-10 items-center md:w-1/2">
+            <Link
+                to="/vehicle-loan">
+              
               <img
                 src={vehicleloan}
                 alt="Car Loan Graph"
                 className="rounded-lg"
               />
+              </Link>
             </div>
             <div className="p-9 md:w-2/3">
               <span className="bg-blue-900 text-white text-lg px-6 py-3 rounded-full">
@@ -109,9 +116,9 @@ const FeaturesSection = () => {
               <div className="mt-10">
               <Link
                 to="/vehicle-loan"
-                className="mt-10 px-6 py-3 bg-white text-black rounded-xl hover:bg-blue-200 transition"
-              >
-                Know More
+                className="mt-10 px-6 py-3 bg-white text-black rounded-xl border border-black hover:bg-yellow-300 transition"
+                >
+                Know More →
               </Link>
               </div>
             </div>
@@ -119,14 +126,17 @@ const FeaturesSection = () => {
         </div>
 
         {/* Personal Loan */}
-        <div id="personal-loan" className="min-h-2 flex items-center justify-center">
+        <div id="personal-loan" className="min-h-2 flex items-center justify-center hover:bg-white transition-colors ">
           <div className="flex p-8 md:flex-row flex-col max-w-6xl">
-            <div className="bg-blue-900 rounded-lg flex justify-center items-center md:w-1/2">
+            <div className="bg-blue-900 rounded-lg flex justify-center mr-10 items-center md:w-1/2">
+              <Link
+                to="/personal-loan">
               <img
                 src={personalloan}
                 alt="Personal Loan Graph"
                 className="rounded-lg"
               />
+              </Link>
             </div>
             <div className="p-9 md:w-2/3">
               <span className="bg-blue-900 text-white text-lg px-6 py-3 rounded-full">
@@ -144,9 +154,9 @@ const FeaturesSection = () => {
               <div className="mt-10">
               <Link
                 to="/personal-loan"
-                className="mt-10 px-6 py-3 bg-white text-black rounded-xl hover:bg-blue-200 transition"
+               className="mt-10 px-6 py-3 bg-white text-black rounded-xl border border-black hover:bg-yellow-300 transition"
               >
-                Know More
+                Know More →
               </Link>
               </div>
             </div>
@@ -154,14 +164,17 @@ const FeaturesSection = () => {
         </div>
 
         {/* Business Loan */}
-        <div id="business-loan" className="min-h-2 flex items-center justify-center">
+        <div id="business-loan" className="min-h-2 flex items-center justify-center hover:bg-white transition-colors ">
           <div className="flex p-8 md:flex-row flex-col max-w-6xl">
-            <div className="bg-blue-900 rounded-lg flex justify-center items-center md:w-1/2">
+            <div className="bg-blue-900 rounded-lg flex justify-center mr-10 items-center md:w-1/2">
+              <Link
+                to="/business-loan">
               <img
                 src={businessloan}
                 alt="Business Loan Graph"
                 className="rounded-lg"
               />
+              </Link>
             </div>
             <div className="p-9 md:w-2/3">
               <span className="bg-blue-900 text-white text-lg px-6 py-3 rounded-full">
@@ -179,9 +192,9 @@ const FeaturesSection = () => {
               <div className="mt-10">
               <Link
                 to="/business-loan"
-                className="mt-10 px-6 py-3 bg-white text-black rounded-xl hover:bg-blue-200 transition"
+                className="mt-10 px-6 py-3 bg-white text-black rounded-xl border border-black hover:bg-yellow-300 transition"
               >
-                Know More
+                Know More →
               </Link>
               </div>
             </div>
@@ -190,8 +203,8 @@ const FeaturesSection = () => {
       </div>
     </div>
 
-      <div className="py-10 sm:py-14 max-w-7xl h-auto mx-auto">
-      <img
+    <div className="py-10 sm:py-14 px-2 sm:px-4 lg:px-8 max-w-7xl h-auto mx-auto">
+    <img
         src={incentmbenfi}
         alt="Business Loan Graph"
         className="rounded-lg"

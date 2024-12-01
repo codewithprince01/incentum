@@ -1,34 +1,81 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FaChevronDown } from "react-icons/fa"; // Dropdown icon
 import rupee from "../../assets/rupee.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+
+  const toggleServicesDropdown = () => {
+    setIsServicesDropdownOpen(!isServicesDropdownOpen);
+  };
 
   return (
-    <header className="bg-[#010059] p-4 sm:p-6 flex justify-between items-center">
+    <header className="bg-[#010059] py-4 px-6 flex justify-between items-center">
       {/* Logo Section */}
-      <div className="text-white font-bold text-lg sm:text-xl flex items-center space-x-3">
-        <img src={rupee} alt="Rupee Icon" className="w-8 h-8 sm:w-10 sm:h-10" />
-        <span>INCENTUM</span>
+      <div className="text-white font-bold text-xl flex items-center space-x-3">
+        <img src={rupee} alt="Rupee Icon" className="w-10 h-10" />
+        <Link to="/HomePage">INCENTUM</Link>
       </div>
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex space-x-6 lg:space-x-10 text-base">
-        <a href="/" className="text-white hover:text-yellow-400 transition">
+      <nav className="hidden md:flex items-center space-x-8 text-lg">
+        <Link to="/HomePage" className="text-white hover:text-[#F5C13D] transition">
           Home
-        </a>
-        <a href="/about" className="text-white hover:text-yellow-400 transition">
+        </Link>
+        <a href="/about" className="text-white hover:text-[#F5C13D] transition">
           About
         </a>
-        <a href="/services" className="text-white hover:text-yellow-400 transition">
-          Services
-        </a>
-        <a href="/contact" className="text-white hover:text-yellow-400 transition">
+
+        {/* Services Dropdown */}
+        <div className="relative">
+          <button
+            className="text-white flex items-center hover:text-[#F5C13D] transition cursor-pointer"
+            onClick={toggleServicesDropdown}
+          >
+            Services
+            <FaChevronDown className="ml-2 text-sm" />
+          </button>
+          {isServicesDropdownOpen && (
+            <div className="absolute bg-gray-800 text-white mt-2 rounded-lg shadow-lg w-48 z-50">
+              <a
+                href="/home-loan"
+                className="block px-4 py-2 hover:bg-[#F5C13D] hover:text-gray-900 transition"
+              >
+                Home Loan
+              </a>
+              <a
+                href="/vehicle-loan"
+                className="block px-4 py-2 hover:bg-[#F5C13D] hover:text-gray-900 transition"
+              >
+                Vehicle Loan
+              </a>
+              <a
+                href="/personal-loan"
+                className="block px-4 py-2 hover:bg-[#F5C13D] hover:text-gray-900 transition"
+              >
+                Personal Loan
+              </a>
+              <a
+                href="/business-loan"
+                className="block px-4 py-2 hover:bg-[#F5C13D] hover:text-gray-900 transition"
+              >
+                Business Loan
+              </a>
+            </div>
+          )}
+        </div>
+        
+        <a href="/contact" className="text-white hover:text-[#F5C13D] transition">
           Contact
         </a>
-        <button className="bg-yellow-500 px-4 py-2 rounded hover:bg-yellow-600 transition">
+        <Link
+          to="/Login-Page"
+          className="bg-[#F5C13D] px-5 py-2 rounded-lg text-black font-semibold hover:bg-[#F5C13D] transition"
+        >
           Get Started
-        </button>
+        </Link>
       </nav>
 
       {/* Mobile Menu Toggle */}
@@ -54,37 +101,33 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <nav className="absolute top-16 left-0 w-full bg-[#010059] text-white shadow-md md:hidden flex flex-col space-y-4 p-6">
-          <a
-            href="/"
-            className="hover:text-yellow-400 transition text-lg"
-            onClick={() => setIsMenuOpen(false)}
-          >
+        <nav className="absolute top-16 left-0 w-full bg-[#010059] text-white shadow-lg md:hidden flex flex-col space-y-6 p-6">
+          <Link to="/HomePage" className="text-white hover:text-[#F5C13D] transition">
             Home
-          </a>
+          </Link>
           <a
             href="/about"
-            className="hover:text-yellow-400 transition text-lg"
+            className="hover:text-[#F5C13D] transition text-lg"
             onClick={() => setIsMenuOpen(false)}
           >
             About
           </a>
           <a
             href="/services"
-            className="hover:text-yellow-400 transition text-lg"
+            className="hover:text-[#F5C13D] transition text-lg"
             onClick={() => setIsMenuOpen(false)}
           >
             Services
           </a>
           <a
             href="/contact"
-            className="hover:text-yellow-400 transition text-lg"
+            className="hover:text-[#F5C13D] transition text-lg"
             onClick={() => setIsMenuOpen(false)}
           >
             Contact
           </a>
           <button
-            className="bg-yellow-500 px-4 py-2 rounded hover:bg-yellow-600 transition"
+            className="bg-[#F5C13D] px-5 py-2 rounded-lg text-white font-semibold hover:bg-[#F5C13D] transition"
             onClick={() => setIsMenuOpen(false)}
           >
             Get Started

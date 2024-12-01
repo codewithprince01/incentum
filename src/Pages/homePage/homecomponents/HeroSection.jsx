@@ -8,20 +8,23 @@ const HeroSection = () => {
      <div
       className=" min-h-screen bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${backgroundimage})`,
-      backgroundSize: "120% 100%" }}
+      backgroundSize: "110% 100%" }}
     >
     <section className="bg-transparent text-white relative py-64 px-8 mb-96 md:px-16">
     <div className="absolute top-2 left-1/2 transform -translate-x-1/2 bg-blue-800/50 border border-blue-500 rounded-full px-8 py-1 mt-36  text-sm flex items-center gap-2">
-  <span className=" text-xl text-white">✨</span>
-  <span className="text-xl text-white">Next-Gen Business Banking</span>
-  </div>
+    <span className=" text-xl text-white">✨</span>
+    <span className="text-xl text-white">Next-Gen Business Banking</span>
+    </div>
 
     {/* Main Content */}
     <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
-      <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
-        Welcome To The World Of <span className="text-blue-300">AI</span>
-        <br />
-        Driven Financial Solutions
+      <h1 className="text-white text-4xl md:text-6xl font-bold leading-tight mb-4">
+        Welcome{" "}
+        <span className="text-blue-400">To The</span>{" "}
+        <span className="text-blue-500">World of AI </span> Driven{" "}
+        <span className="text-blue-400">Financial </span>
+        <span className="text-blue-500"> Solutions</span>
+          <br />       
       </h1>
       <p className="text-sm md:text-lg text-gray-300 mb-8">
         Our expertise and personalized support empower a seamless journey

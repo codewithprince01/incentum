@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../../index.css";
 import { Link } from "react-router-dom";
 
-export default function SignupPage() {
+export default function LoginPage() {
   const [phoneNumber, setPhoneNumber] = useState("");
 
   const handleFormSubmit = (e) => {
@@ -14,100 +14,75 @@ export default function SignupPage() {
   return (
     <div className="min-h-screen bg-image grid grid-cols-1 xl:grid-cols-2">
       {/* Left Section */}
-
       <div className="flex flex-col w-full p-6 xl:p-12">
-          {/* Hero Text */}
-        <div className="flex flex-col justify-center h-full">
-        <h2 className="text-white text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold leading-tight">
-        Welcome{" "}
-        <span className="text-blue-300">To The</span>{" "}
-        <span className="text-blue-400">Realm Of</span> Modern{" "}
-        <span className="text-blue-400">Banking!</span>
-        </h2>
-        <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <div>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white">1Million+</h2>
-        <p className="text-white text-base sm:text-lg">Registered Businesses</p>
-        </div>
-        <div>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white">$1Billion+</h2>
-        <p className="text-white text-base sm:text-lg">Monthly Payments Value</p>
-        </div>
-        <div>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white">1Million+</h2>
-        <p className="text-white text-base sm:text-lg">Daily Transactions</p>
-        </div>
-        </div>
+      <div className="flex flex-col justify-center h-2/3 mx-auto">
+      <h2 className="text-white text-3xl md:text-4xl xl:text-5xl font-bold leading-tight">
+            Welcome <span className="text-blue-300">To The</span>{" "}
+            <span className="text-blue-400">Realm Of</span> Modern{" "}
+            <span className="text-blue-400">Banking!</span>
+          </h2>
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div>
+              <h2 className="text-2xl font-bold text-white">1Million+</h2>
+              <p className="text-white text-lg">Registered Businesses</p>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-white">$1Billion+</h2>
+              <p className="text-white text-lg">Monthly Payments Value</p>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-white">1Million+</h2>
+              <p className="text-white text-lg">Daily Transactions</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Right Section - Form */}
-      <div className="flex items-center justify-center p-6 bg-opacity-80">
-        <div className="w-full max-w-md p-4 sm:p-6 bg-white bg-opacity-10 backdrop-blur-md border border-gray-700 rounded-lg shadow-lg">
-          <h2 className="text-gray-200 text-2xl sm:text-3xl font-bold mb-7">
-            Login
-          </h2>
-          <p className="text-gray-400 text-lg sm:text-lg mb-7">
-            Glad you're back!
-          </p>
+      {/* Right Section */}
+      <div className="flex items-center justify-center h-5/6 p-6 bg-opacity-80">
+        <div className="w-full max-w-md p-6 bg-white bg-opacity-10 backdrop-blur-md border border-gray-700 rounded-lg shadow-lg">
+          <h2 className="text-gray-200 text-3xl font-bold mb-4">Login</h2>
+          <p className="text-gray-400 text-lg mb-4">Glad you're back!</p>
 
           <form onSubmit={handleFormSubmit}>
-            {/* Phone Number Input */}
-            <div className="mb-7">
-              <input
-                type="tel"
-                placeholder="Enter your Mobile Number"
-                className="w-full p-3 text-lg border border-gray-300 rounded-lg bg-transparent placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                value={phoneNumber}
-                onChange={(e) => setPhoneNumber(e.target.value)}
-              />
-            </div>
-
-            {/* Remember Me Checkbox */}
-            <div className="flex items-center mb-7">
-              <input
-                type="checkbox"
-                id="rememberMe"
-                className="mr-2 w-4 h-4"
-              />
-              <label
-                htmlFor="rememberMe"
-                className="text-gray-300 text-lg sm:text-xl"
-              >
+            <input
+              type="tel"
+              placeholder="Enter your Mobile Number"
+              className="w-full p-3 text-lg mb-4 border border-gray-300 rounded-lg bg-transparent placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              value={phoneNumber}
+              onChange={(e) => setPhoneNumber(e.target.value)}
+            />
+            <div className="flex items-center mb-4">
+              <input type="checkbox" id="rememberMe" className="mr-2" />
+              <label htmlFor="rememberMe" className="text-gray-300 text-lg">
                 Remember me
               </label>
             </div>
-
-            {/* Submit Button */}
             <button
               type="submit"
-              className="w-full py-3 bg-blue-600 text-white text-lg sm:text-xl font-bold rounded-lg hover:bg-blue-700 transition"
+              className="w-full py-3 bg-blue-600 text-white text-lg font-bold rounded-lg hover:bg-blue-700 transition"
             >
               Enter OTP
             </button>
-
-            {/* Divider */}
-            <div className="flex items-center justify-center my-7">
+             {/* Divider */}
+             <div className="flex items-center justify-center my-7">
               <div className="w-1/3 border-t border-gray-500"></div>
               <span className="mx-4 text-gray-500 text-lg sm:text-xl font-bold">
                 Or
               </span>
               <div className="w-1/3 border-t border-gray-500"></div>
             </div>
-
-            {/* Signup Link */}
-            <p className="text-center text-gray-400 text-lg sm:text-xl mt-10">
+            <p className="text-center text-gray-400 text-lg mt-6">
               Don't have an account?{" "}
               <Link
-                to="/signup-Page"
+                to="/signup-page"
                 className="text-blue-400 underline hover:text-blue-500"
               >
                 Signup
               </Link>
             </p>
-
-            {/* Footer Links */}
-            <div className="flex justify-center gap-4 text-gray-500 text-sm sm:text-base mt-7">
+             {/* Footer Links */}
+             <div className="flex justify-center gap-4 text-gray-500 text-sm sm:text-base mt-7">
               <Link to="#">Terms & Conditions</Link>
               <Link to="#">Support</Link>
               <Link to="#">Customer Care</Link>

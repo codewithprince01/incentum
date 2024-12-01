@@ -16,7 +16,7 @@ const BankingSection = () => {
         </p>
         <Link
           to="/Signup-Page"
-          className="bg-white text-blue-800 font-medium px-4 py-2 sm:px-6 sm:py-3 mt-4 rounded-lg hover:bg-gray-100 transition flex items-center"
+          className="bg-white text-black font-medium px-4 py-2 sm:px-6 sm:py-3 mt-4 rounded-lg hover:bg-yellow-300 transition flex items-center"
         >
           Get Started
         </Link>
