@@ -23,11 +23,11 @@ const TrustedClients = () => {
   ];
 
   return (
-    <section className="py-12 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-12">
-        <h1 className="text-3xl sm:text-4xl font-semibold text-center mb-8">
-          Our Trusted Clients
-        </h1>
+    <section className="py-10  bg-white">
+      <div className="container max-w-7xl mx-auto ">
+      <h1 className="text-3xl sm:text-5xl font-bold text-center tracking-wide leading-snug bg-gradient-to-r from-black via-blue-500 to-blue-700 text-transparent bg-clip-text drop-shadow-lg mb-5 ">
+        Our Trusted Clients
+      </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {reviews.map((review) => (
             <div
@@ -52,7 +52,7 @@ const TrustedClients = () => {
                   </p>
                 </div>
               </div>
-              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+              <p className="text-sm sm:text-base font-light text-gray-700 leading-relaxed">
                 {review.review}
               </p>
             </div>
