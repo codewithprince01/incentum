@@ -9,6 +9,9 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 import { IoMdContacts } from "react-icons/io";
 import { TbListDetails } from "react-icons/tb";
 import { MdOutlineDataExploration } from "react-icons/md";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 function HomeAccorrdion({ type, openAccordion, handleAccordionClick }) {
     const sections = {
@@ -215,61 +218,76 @@ function HomeAccorrdion({ type, openAccordion, handleAccordionClick }) {
         offer:"/commonloanimg/offer.png"
     };
 
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, // Animation duration in ms
+            once: true, // Whether animation should happen only once
+        });
+    }, []);
+
     return (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0 mt-2" id={type}>
-            <div className="mt-[50px] lg:mt-[80px] mx-6 lg:ml-[120px]">
-                <h1 className="text-[40px] lg:text-[55px] font-bold heading">{titles[type]}</h1>
-                <p className="text-[20px] lg:text-[20px] text-white font-medium mt-2 leading-[30px] lg:leading-[35px]">
-                    {descriptions[type][0]}
-                </p>
-                <p className="text-[20px] text-white lg:text-[20px] font-medium leading-[30px] lg:leading-[30px]">
-                    {descriptions[type][1]}
-                </p>
-                <div className="mt-8 lg:mt-12">
-                    {sections[type].map((section, index) => {
-                        const accordionKey = `${type}-${index + 1}`;
-                        return (
-                            <Accordion
-                                key={accordionKey}
-                                open={openAccordion === accordionKey}
-                                className={`rounded-xl mb-6 pb-2 transition-all duration-500 ease-in-out ${openAccordion === accordionKey
-                                    ? "border-b-[6px] border-auButtomColor"
-                                    : "border-b-[6px] border-white"
-                                    } bg-auColor`}
+        <div
+            className="mt-[50px] lg:mt-[80px] mx-6 lg:ml-[120px]"
+            data-aos="fade-right" // Left-side content animates from the right
+        >
+            <h1 className="text-[40px] lg:text-[55px] font-bold heading">{titles[type]}</h1>
+            <p className="text-[20px] lg:text-[20px] text-white font-medium mt-2 leading-[30px] lg:leading-[35px]">
+                {descriptions[type][0]}
+            </p>
+            <p className="text-[20px] text-white lg:text-[20px] font-medium leading-[30px] lg:leading-[30px]">
+                {descriptions[type][1]}
+            </p>
+            <div className="mt-8 lg:mt-12">
+                {sections[type].map((section, index) => {
+                    const accordionKey = `${type}-${index + 1}`;
+                    return (
+                        <Accordion
+                            key={accordionKey}
+                            open={openAccordion === accordionKey}
+                            className={`rounded-xl mb-6 pb-2 transition-all duration-500 ease-in-out ${openAccordion === accordionKey
+                                ? "border-b-[6px] border-auButtomColor"
+                                : "border-b-[6px] border-white"
+                                } bg-auColor`}
+                        >
+                            <AccordionHeader
+                                onClick={() => handleAccordionClick(accordionKey)}
+                                className="px-6 lg:px-10 pt-6 lg:pt-6 pb-3 font-medium cursor-pointer text-white flex justify-start items-center border-none"
                             >
-                                <AccordionHeader
-                                    onClick={() => handleAccordionClick(accordionKey)}
-                                    className="px-6 lg:px-10 pt-6 lg:pt-6 pb-3 font-medium cursor-pointer text-white flex justify-start items-center border-none"
-                                >
-                                    <div>{section.icon}</div>
-                                    <h2 className="ml-4 lg:ml-5 text-[19px] lg:text-[26px] font-bold">
-                                        {section.heading}
-                                    </h2>
-                                </AccordionHeader>
-                                <div
-                                    style={{
-                                        maxHeight: openAccordion === accordionKey ? "500px" : "0",
-                                        overflow: "hidden",
-                                        transition: "max-height 0.5s ease-in-out",
-                                    }}
-                                >
-                                    <AccordionBody className="px-6 lg:px-16 pb-6 lg:pb-4 text-white text-[20px] lg:text-[22px]">
-                                        {section.content}
-                                    </AccordionBody>
-                                </div>
-                            </Accordion>
-                        );
-                    })}
-                </div>
-            </div>
-            <div className="flex justify-center lg:justify-start">
-                <img
-                    src={images[type]}
-                    alt={`${titles[type]} Illustration`}
-                    className="mt-[30px] lg:mt-[90px] lg:ml-[130px] w-[370px] h-[320px] lg:w-[500px] lg:h-[400px]  imgBorder my-4 rounded-lg"
-                />
+                                <div>{section.icon}</div>
+                                <h2 className="ml-4 lg:ml-5 text-[19px] lg:text-[26px] font-bold">
+                                    {section.heading}
+                                </h2>
+                            </AccordionHeader>
+                            <div
+                                style={{
+                                    maxHeight: openAccordion === accordionKey ? "500px" : "0",
+                                    overflow: "hidden",
+                                    transition: "max-height 0.5s ease-in-out",
+                                }}
+                            >
+                                <AccordionBody className="px-6 lg:px-16 pb-6 lg:pb-4 text-white text-[20px] lg:text-[22px]">
+                                    {section.content}
+                                </AccordionBody>
+                            </div>
+                        </Accordion>
+                    );
+                })}
             </div>
         </div>
+        <div
+            className="flex justify-center lg:justify-start"
+            data-aos="fade-left" // Right-side image animates from the left
+        >
+            <img
+                src={images[type]}
+                alt={`${titles[type]} Illustration`}
+                className="mt-[30px] lg:mt-[90px] lg:ml-[130px] w-[370px] h-[320px] lg:w-[500px] lg:h-[400px]  imgBorder my-4 rounded-lg"
+            />
+        </div>
+    </div>
+    
     );
 }
 
