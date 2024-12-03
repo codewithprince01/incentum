@@ -221,8 +221,8 @@ function HomeAccorrdion({ type, openAccordion, handleAccordionClick }) {
 
     useEffect(() => {
         AOS.init({
-            duration: 1000, // Animation duration in ms
-            once: true, // Whether animation should happen only once
+            duration: 1000, 
+            once: true, 
         });
     }, []);
 
@@ -230,7 +230,7 @@ function HomeAccorrdion({ type, openAccordion, handleAccordionClick }) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0 mt-2" id={type}>
         <div
             className="mt-[50px] lg:mt-[80px] mx-6 lg:ml-[120px]"
-            data-aos="fade-right" // Left-side content animates from the right
+            data-aos="fade-right" 
         >
             <h1 className="text-[40px] lg:text-[55px] font-bold heading">{titles[type]}</h1>
             <p className="text-[20px] lg:text-[20px] text-white font-medium mt-2 leading-[30px] lg:leading-[35px]">
@@ -278,7 +278,7 @@ function HomeAccorrdion({ type, openAccordion, handleAccordionClick }) {
         </div>
         <div
             className="flex justify-center lg:justify-start"
-            data-aos="fade-left" // Right-side image animates from the left
+            data-aos="fade-left" 
         >
             <img
                 src={images[type]}
