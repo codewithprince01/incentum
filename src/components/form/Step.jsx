@@ -1,5 +1,6 @@
 import React from 'react'
 export default function Step() {
+    
   return (
     <div className="flex justify-between items-center mb-6">
           {[1, 2, 3, 4].map((step, index) => (

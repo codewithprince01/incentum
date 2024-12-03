@@ -22,7 +22,7 @@ export default function Dropdown({
   return (
     <div className="relative w-full">
       <button
- className={`w-full border border-blue-400 bg-blue-100 text-[18px] py-[16px] pl-6 rounded-xl mb-4 shadow-md font-medium text-start focus:outline-none hover:bg-blue-200 transition-all duration-300 ${
+ className={`w-full border border-blue-400 bg-[#D3EEFF] text-[16px] py-[17px] pl-6 rounded-xl mb-4 shadow-md font-medium text-start focus:outline-none hover:bg-blue-200 transition-all duration-300 ${
           selectedOption ? "text-black" : "text-gray-400"}`}   onClick={() => setOpenDropdown(isOpen?null:id)}
       >
         {selectedOption || placeholder}
@@ -31,7 +31,7 @@ export default function Dropdown({
         </span>
       </button>
       <div
-        className={`relative bg-blue-200 rounded-lg shadow-lg overflow-hidden transition-max-height duration-500 ease-in-out mb-4 ${
+        className={`relative bg-[#D3EEFF] rounded-lg shadow-lg overflow-hidden transition-max-height duration-500 ease-in-out mb-4 ${
           isOpen ? "max-h-64" : "max-h-0"
         }`}
         style={{ transitionProperty: "max-height" }}

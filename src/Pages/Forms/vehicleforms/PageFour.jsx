@@ -39,36 +39,24 @@ const AccountSetup = () => {
   ];
 
   return (
-    <div className="flex flex-col lg:flex-row p-8 py-12 mx-4 rounded-lg shadow-md bg-[#C0F7FB] ">
+    <div className="flex flex-col lg:flex-row p-7 py-10 rounded-lg shadow-md form-bg-image bg-[#C0F7FB] ">
     {/* Left Section */}
-      <div className="  p-8 lg:w-1/3 flex flex-col items-center">
+      <div className="  p-7 lg:w-1/3 flex flex-col items-center">
         <div className=" form-slidebar ">
         </div>
       </div>
       {/* Right Section */}
-      <div className="lg:w-2/3 bg-white mt-8 p-8 py-12 mx-4 rounded-lg shadow-md">
-        <h2 className="text-2xl font-bold text-gray-800 mb-2">Account Set Up</h2>
+      <div className="lg:w-2/3 bg-white mt-8 p-8 py-11 mx-4 rounded-3xl shadow-md">
+        <h2 className="text-3xl font-bold text-gray-900 mb-2">Account Set Up</h2>
         <p className="text-gray-600 mb-6">
           Set up your account for your loan application
         </p>
 
         {/* Steps */}
-        <div className="flex justify-between items-center mb-6">
-          {[1, 2, 3, 4].map((step, index) => (
-            <div key={step} className="flex items-center">
-              <div
-                className={`w-12 h-12 bg-blue-500 text-white flex items-center justify-center rounded-lg border-4 ${
-                  index <= 2 ? 'border-blue-400' : 'border-blue-200'
-                }`}
-              >
-                {step}
-              </div>
-              {index !== 3 && (
-                <div className="w-16 h-1 bg-blue-400 rounded-full mx-2"></div>
-              )}
-            </div>
-          ))}
-        </div>
+        
+        <h1 className="text-xl font-bold mt-8 text-gray-900  mb-8">
+              4. Upload Documents
+            </h1>
 
         {/* Document Upload Table */}
         <table className="w-full border-collapse border border-gray-300">
