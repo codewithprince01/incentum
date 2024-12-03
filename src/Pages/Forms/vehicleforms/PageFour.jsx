@@ -39,19 +39,14 @@ const AccountSetup = () => {
   ];
 
   return (
-    <div className="flex flex-col lg:flex-row p-8 py-12 mx-4 rounded-lg shadow-md bg-[#C0F7FB]">
-      {/* Left Section */}
-      <div className="bg-blue-700 text-white p-8 lg:w-1/3 flex flex-col justify-center items-center">
-        <div className="mb-8">
-          <img src="/logo.png" alt="Logo" className="h-16" />
-        </div>
-        <div>
-          <img src="/icon.png" alt="Icon" className="h-32" />
+    <div className="flex flex-col lg:flex-row p-8 py-12 mx-4 rounded-lg shadow-md bg-[#C0F7FB] ">
+    {/* Left Section */}
+      <div className="  p-8 lg:w-1/3 flex flex-col items-center">
+        <div className=" form-slidebar ">
         </div>
       </div>
-
       {/* Right Section */}
-      <div className="lg:w-2/3 bg-white p-8 py-12 mx-4 rounded-lg shadow-md">
+      <div className="lg:w-2/3 bg-white mt-8 p-8 py-12 mx-4 rounded-lg shadow-md">
         <h2 className="text-2xl font-bold text-gray-800 mb-2">Account Set Up</h2>
         <p className="text-gray-600 mb-6">
           Set up your account for your loan application
