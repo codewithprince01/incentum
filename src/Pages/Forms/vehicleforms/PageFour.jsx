@@ -41,13 +41,13 @@ const AccountSetup = () => {
   return (
     <div className="flex flex-col lg:flex-row p-8 py-12 mx-4 rounded-lg shadow-md bg-[#C0F7FB]">
       {/* Left Section */}
-      <div className="bg-blue-700 text-white p-8 lg:w-1/3 flex flex-col justify-center items-center">
-        <div className="mb-8">
+      <div className=" form-slidebar">
+        {/* <div className="mb-8">
           <img src="/logo.png" alt="Logo" className="h-16" />
         </div>
         <div>
           <img src="/icon.png" alt="Icon" className="h-32" />
-        </div>
+        </div> */}
       </div>
 
       {/* Right Section */}
