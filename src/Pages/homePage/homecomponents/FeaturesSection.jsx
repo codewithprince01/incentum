@@ -22,7 +22,7 @@ const FeaturesSection = () => {
         {/* Header Navbar */}
         <div className="sticky top-0 z-10">
           <div className="container mx-auto flex justify-center py-5">
-            <div className="flex bg-gradient-to-b from-[#f5fafe] to-[#ebecf6] shadow-md rounded-full px-2 py-0 space-x-3 sm:space-x-6 border border-[#14296d]">
+            <div className="flex bg-gradient-to-b from-[#e8f4fd] to-[#dfe1f6] shadow-md rounded-full px-2 py-0 space-x-3 sm:space-x-6 border border-[#14296d]">
               {[
                 { id: "home-loan", label: "Home Loan" },
                 { id: "car-loan", label: "Car Loan" },
@@ -50,7 +50,7 @@ const FeaturesSection = () => {
       {/* Home Loan */}
         <div id="home-loan" className="min-h-2 flex items-center justify-center  hover:bg-white transition-colors duration-200">
           <div className="flex p-8 md:flex-row flex-col max-w-6xl">
-            <div className="bg-blue-900 rounded-lg flex justify-center mr-10 items-center md:w-1/2 ">
+            <div className=" rounded-lg flex justify-center mr-10 items-center md:w-1/2 ">
             <Link
                 to="/home-loan" >
               <img
