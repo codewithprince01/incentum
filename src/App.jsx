@@ -10,6 +10,8 @@ import HomeLoan from './Pages/loans/homeLoan/HomeLoan';
 import VehicelLoan from './Pages/loans/vehicleLoan/VehicleLoan';
 import PersonalLoan from './Pages/loans/personalLoan/PersonalLoan';
 import BusinessLoan from './Pages/loans/businessLoan/BusinessLoan';
+import PageOne from './Pages/Forms/vehicleforms/PageOne';
+import PageFour from './Pages/Forms/vehicleforms/PageFour';
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
         <Route path='personal-loan' element={<PersonalLoan/>}/>
         <Route path='business-loan' element={<BusinessLoan/>}/>
         <Route path='/HomePage' element={<HomePage/>} />
+        <Route path='/presonal-details-formOne' element={<PageOne/>} />
+        <Route path='/presonal-details-formFour' element={<PageFour/>}/>
         </Route>
       </Routes>
     </Router>

@@ -24,7 +24,7 @@ export default function Button() {
               </Link>
             </button>
             <button>
-              <Link className="flex text-white text-lg sm:text-xl border-[2px] sm:border-[3px] bg-primary border-primary px-4 sm:px-4 py-2 sm:py-2 rounded-xl  items-center">
+              <Link to={'/presonal-details-formOne'} className="flex text-white text-lg sm:text-xl border-[2px] sm:border-[3px] bg-primary border-primary px-4 sm:px-4 py-2 sm:py-2 rounded-xl  items-center">
                 Contact Sales
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

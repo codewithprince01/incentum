@@ -136,6 +136,32 @@
 }
 
 
+ 
+
+/* form  */
+
+.form-bg-image{
+  background-image: url('/form/bgImage.webp'); 
+  background-size: cover;          
+  background-position: center;   
+  background-repeat: no-repeat;  
+  height: 1900px;              
+  position: relative;  
+  background-color: rgb(176, 232, 230);
+   
+}
+.form-slidebar{
+  background-image: url('/form/sideBar.webp'); 
+  background-size: cover;          
+  background-position: center;   
+  background-repeat: no-repeat; 
+  max-height: 100%; 
+  height: 900px;   
+  width: 460px;          
+  position: relative;  
+   
+}
+
 
 
 
