@@ -4,8 +4,11 @@ export default function Dropdown({
   options = [],
   placeholder = "Select an option",
   onSelect,
+  isOpen,
+  setOpenDropdown,
+  id,
 }) {
-  const [isOpen, setIsOpen] = useState(false);
+ 
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleOptionClick = (option) => {
@@ -19,8 +22,8 @@ export default function Dropdown({
   return (
     <div className="relative w-full">
       <button
- className={`w-full border border-blue-400 bg-blue-100 text-xl py-5 pl-6 rounded-xl mb-4 shadow-md font-medium text-start focus:outline-none hover:bg-blue-200 transition-all duration-300 ${
-          selectedOption ? "text-black" : "text-gray-400"}`}        onClick={() => setIsOpen(!isOpen)}
+ className={`w-full border border-blue-400 bg-blue-100 text-[18px] py-[16px] pl-6 rounded-xl mb-4 shadow-md font-medium text-start focus:outline-none hover:bg-blue-200 transition-all duration-300 ${
+          selectedOption ? "text-black" : "text-gray-400"}`}   onClick={() => setOpenDropdown(isOpen?null:id)}
       >
         {selectedOption || placeholder}
         <span className={`float-right text-gray-400 mr-4 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}>

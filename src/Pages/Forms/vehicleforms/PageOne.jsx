@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import Input from "../../../components/form/Input.jsx";
 import Dropdown from "../../../components/form/Dropdown.jsx";
 import Button from "../../../components/form/Button.jsx";
 
 export default function PageOne() {
+  const [openDropdown , setOpenDropdown] = useState(null);
+
+
   const handleOptionSelect = (option) => {
     console.log("Selected:", option);
   };
 
   return (
-    <div className="form-bg-image ">
+    <div className="form-bg-image px-10 pb-10 ">
       <div className="grid grid-cols-12 pt-14">
-        <div className="col-span-4 form-slidebar ml-[80px]"></div>
-        <div className="col-span-8 border border-none mr-[60px] max-w-full w-[92%] m-auto rounded-3xl bg-white ">
+        <div className="col-span-4 form-slidebar ml-[50px]"></div>
+        <div className="col-span-8 border border-none mr-[10px] max-w-full w-[92%] m-auto rounded-3xl bg-white ">
           <h1 className="text-4xl font-bold mt-8 ml-14 text-gray-700">
             Account Set Up
           </h1>
@@ -40,6 +43,9 @@ export default function PageOne() {
                 <Dropdown
                   options={["Option 1", "Option 2", "Option 3", "Option 4"]}
                   placeholder="Qualification"
+                  setOpenDropdown={setOpenDropdown}
+                  isOpen={openDropdown === "qualification"}
+                  id="qualification"
                   onSelect={handleOptionSelect}
                 />
                 <Input placeholder="Employment Type" />
@@ -48,6 +54,9 @@ export default function PageOne() {
                 <Dropdown
                   options={["Option 1", "Option 2", "Option 3", "Option 4"]}
                   placeholder="Marital Status"
+                   setOpenDropdown={setOpenDropdown}
+                   isOpen={openDropdown === "maritalStatus"}
+                  id="maritalStatus"
                   onSelect={handleOptionSelect}
                 />
                 <Input placeholder="Spouse Employment Type" />
@@ -56,6 +65,9 @@ export default function PageOne() {
                 <Dropdown
                   options={["Option 1", "Option 2", "Option 3", "Option 4"]}
                   placeholder="No of Dependents"
+                   setOpenDropdown={setOpenDropdown}
+                   isOpen={openDropdown === "dependents"}
+                  id="dependents"
                   onSelect={handleOptionSelect}
                 />
                 <Input placeholder="pan Number" />
@@ -64,6 +76,9 @@ export default function PageOne() {
                 <Dropdown
                   options={["Option 1", "Option 2", "Option 3", "Option 4"]}
                   placeholder="Residence Type"
+                   setOpenDropdown={setOpenDropdown}
+                   isOpen={openDropdown === "residenceType"}
+                  id="residenceType"
                   onSelect={handleOptionSelect}
                 />
                 <Input placeholder="Citizenship" />
@@ -79,6 +94,9 @@ export default function PageOne() {
                 <Dropdown
                   options={["Option 1", "Option 2", "Option 3", "Option 4"]}
                   placeholder="Select State"
+                   setOpenDropdown={setOpenDropdown}
+                   isOpen={openDropdown === "selectState"}
+                  id="selectState"
                   onSelect={handleOptionSelect}
                 />
                 <Input placeholder="District" />
@@ -98,6 +116,9 @@ export default function PageOne() {
                 <Dropdown
                   options={["Option 1", "Option 2", "Option 3", "Option 4"]}
                   placeholder="Select State"
+                   setOpenDropdown={setOpenDropdown}
+                   isOpen={openDropdown === "PSelectState"}
+                  id="PSelectState"
                   onSelect={handleOptionSelect}
                 />
                 <Input placeholder="District" />
