@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 
 const StepNavigation = () => {
@@ -19,6 +20,7 @@ const StepNavigation = () => {
       alert("Already on first step");
     }
   };
+
 
   return (
     <div className="flex flex-col items-center justify-center p-6 bg-gradient-to-b from-purple-100 via-blue-100 to-blue-200 min-h-screen">
