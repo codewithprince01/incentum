@@ -15,8 +15,8 @@ export default function LoanNav() {
 
 
   return (
-    <div className=" justify-center border navborder hidden lg:block font-bold max-w-[1000px] mx-auto rounded-full py-3 px-4 mt-[60px] no-underline ">
-    <ul className="flex flex-wrap justify-center text-gray-500  lg:gap-10  xl:gap-10 text-lg lg:text-xl xl:text-2xl py-1 xl:p-1">
+    <div className=" justify-center border navborder hidden lg:block font-bold max-w-full w-[62%] mx-auto rounded-full py-2 px-2 mt-[30px] no-underline ">
+    <ul className="flex flex-wrap justify-center text-gray-500  lg:gap-6  xl:gap-6 text-lg lg:text-xl xl:text-[23px] py-1 xl:p-1">
       <li>
         <a href="#eligibility" onClick={(e)=>{
           e.preventDefault();
