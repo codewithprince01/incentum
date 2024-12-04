@@ -29,7 +29,7 @@ export default function PageOne() {
             Set up your account for your loan application
           </p>
 
-          <h1 className="text-xl font-bold mt-10 text-gray-900 mb-8">
+          <h1 className="text-xl font-bold mt-10 text-gray-900 mb-5">
             1. Personal Details
           </h1>
           
@@ -39,73 +39,94 @@ export default function PageOne() {
                 <Input placeholder="Father Name" />
               </div>
               <div className="grid grid-cols-2 w-full gap-6">
-                <Input placeholder="Mobile number" />
+                <Input placeholder="Enter 10-digit mobile number" />
                 <Input placeholder="Email ID" />
               </div>
               <div className="grid grid-cols-2 w-full gap-6">
                 <Input placeholder="DOB" />
-                <Input placeholder="Gender" />
+                <Dropdown
+                  options={["Male", "Female", "Other"]}
+                  placeholder="Gender"
+                  setOpenDropdown={setOpenDropdown}
+                  isOpen={openDropdown === "gender"}
+                  id="gender"
+                  onSelect={handleOptionSelect}
+                />
               </div>
               <div className="grid grid-cols-2 w-full gap-6">
                 <Dropdown
-                  options={["Option 1", "Option 2", "Option 3", "Option 4"]}
+                  options={["Post Graduate", "Graduate", "Higher Secondary", "Secondary","Others"]}
                   placeholder="Qualification"
                   setOpenDropdown={setOpenDropdown}
                   isOpen={openDropdown === "qualification"}
                   id="qualification"
                   onSelect={handleOptionSelect}
                 />
-                <Input placeholder="Employment Type" />
+                <Dropdown
+                  options={["Salaried", "Self Employed", "Professional", "Unemployed"]}
+                  placeholder="Employment Type"
+                   setOpenDropdown={setOpenDropdown}
+                   isOpen={openDropdown === "employmenttype"}
+                  id="employmenttype"
+                  onSelect={handleOptionSelect}
+                />
               </div>
               <div className="grid grid-cols-2 w-full gap-6">
                 <Dropdown
-                  options={["Option 1", "Option 2", "Option 3", "Option 4"]}
+                  options={["Married", "Unmarried", "Other"]}
                   placeholder="Marital Status"
                    setOpenDropdown={setOpenDropdown}
                    isOpen={openDropdown === "maritalStatus"}
                   id="maritalStatus"
                   onSelect={handleOptionSelect}
                 />
-                <Input placeholder="Spouse Employment Type" />
+                 <Dropdown
+                  options={["Earning", "Home Maker"]}
+                  placeholder="Spouse Employment Type"
+                   setOpenDropdown={setOpenDropdown}
+                   isOpen={openDropdown === "spouseemploymenttype"}
+                  id="spouseemploymenttype"
+                  onSelect={handleOptionSelect}
+                />
               </div>
               <div className="grid grid-cols-2 w-full gap-6">
                 <Dropdown
-                  options={["Option 1", "Option 2", "Option 3", "Option 4"]}
+                  options={["0", "1", "2", "3"]}
                   placeholder="No of Dependents"
                    setOpenDropdown={setOpenDropdown}
                    isOpen={openDropdown === "dependents"}
                   id="dependents"
                   onSelect={handleOptionSelect}
                 />
-                <Input placeholder="pan Number" />
+                <Input placeholder="Pan Number" />
               </div>
               <div className="grid grid-cols-2 w-full gap-6">
                 <Dropdown
-                  options={["Option 1", "Option 2", "Option 3", "Option 4"]}
+                  options={["Owned", "Rented", "Parental", "Others"]}
                   placeholder="Residence Type"
                    setOpenDropdown={setOpenDropdown}
                    isOpen={openDropdown === "residenceType"}
                   id="residenceType"
                   onSelect={handleOptionSelect}
                 />
-                <Input placeholder="Citizenship" />
+                <Dropdown
+                  options={["Resident Indian", "Non-Resident Indian"]}
+                  placeholder="Citizenship"
+                   setOpenDropdown={setOpenDropdown}
+                   isOpen={openDropdown === "residenceType"}
+                  id="residenceType"
+                  onSelect={handleOptionSelect}
+                />
               </div>
             </div>
           
           <div>
-            <h1 className="text-xl font-bold mt-4 ml-3 text-gray-900  mb-8">
+            <h1 className="text-xl font-bold mt-2 ml-3 text-gray-900  mb-5">
               Permanent Address Details
             </h1>
              <div className="mx-12">
              <div className="grid grid-cols-2 w-full gap-6">
-                <Dropdown
-                  options={["Option 1", "Option 2", "Option 3", "Option 4"]}
-                  placeholder="Select State"
-                   setOpenDropdown={setOpenDropdown}
-                   isOpen={openDropdown === "selectState"}
-                  id="selectState"
-                  onSelect={handleOptionSelect}
-                />
+                <Input placeholder="State" />
                 <Input placeholder="District" />
               </div>
               <div className="grid grid-cols-2  w-full gap-6">
@@ -115,19 +136,12 @@ export default function PageOne() {
              </div>
           </div>
           <div>
-            <h1 className="text-xl font-bold mt-4 ml-3 text-gray-900  mb-8">
+            <h1 className="text-xl font-bold mt-2 ml-3 text-gray-900  mb-5">
                Present Address Details
             </h1>
              <div className="mx-12">
              <div className="grid grid-cols-2 w-full gap-6">
-                <Dropdown
-                  options={["Option 1", "Option 2", "Option 3", "Option 4"]}
-                  placeholder="Select State"
-                   setOpenDropdown={setOpenDropdown}
-                   isOpen={openDropdown === "PSelectState"}
-                  id="PSelectState"
-                  onSelect={handleOptionSelect}
-                />
+                <Input placeholder="State" />
                 <Input placeholder="District" />
               </div>
               <div className="grid grid-cols-2  w-full gap-6">

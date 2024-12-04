@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from './components/ScrollToTop'; // Import the ScrollToTop component
 import SignupPage from './Pages/authentication/SignupPage';
 import LoginPage from './Pages/authentication/LoginPage';
 import HeroSection from './Pages/homePage/homecomponents/HeroSection';
@@ -17,6 +18,7 @@ import PageFour from './Pages/Forms/vehicleforms/PageFour';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Layout/>}>
         <Route index element={<HomePage/>}/>

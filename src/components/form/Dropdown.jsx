@@ -22,7 +22,7 @@ export default function Dropdown({
   return (
     <div className="relative w-full">
       <button
- className={`w-full border border-blue-400 bg-[#D3EEFF] text-[16px] py-[17px] pl-6 rounded-xl mb-4 shadow-md font-medium text-start focus:outline-none hover:bg-blue-200 transition-all duration-300 ${
+ className={`w-full border border-blue-400 bg-[#D3EEFF] text-[16px] py-[11px] pl-6 rounded-xl shadow-md font-medium text-start focus:outline-none hover:bg-blue-200 transition-all duration-300 ${
           selectedOption ? "text-black" : "text-gray-400"}`}   onClick={() => setOpenDropdown(isOpen?null:id)}
       >
         {selectedOption || placeholder}
