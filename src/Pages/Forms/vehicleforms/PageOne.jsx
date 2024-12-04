@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Input from "../../../components/form/Input.jsx";
 import Dropdown from "../../../components/form/Dropdown.jsx";
 import Button from "../../../components/form/Button.jsx";
+import StepBar from "../../../components/form/Step.jsx";
 
 export default function PageOne() {
   const [openDropdown , setOpenDropdown] = useState(null);
@@ -22,6 +23,9 @@ export default function PageOne() {
           <h3 className="text-xl font-medium mt-4 ml-14">
             Set up your account for your loan Application
           </h3>
+          <div>
+            <StepBar/>
+          </div>
           <div>
             <h1 className="text-2xl font-bold mt-14 text-gray-900 ml-14 mb-10">
               1. Personal Details
