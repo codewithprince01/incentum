@@ -239,7 +239,7 @@ function HomeAccorrdion({ type, openAccordion, handleAccordionClick }) {
             <p className="text-[18px] md:ml-[10px] text-white lg:text-[18px] font-medium leading-[28px] lg:leading-[25px]">
                 {descriptions[type][1]}
             </p>
-            <div className="mt-6 lg:mt-8 max-w-full m-auto lg:w-[80%] md:w-[80%] w-full">
+            <div className="mt-6 lg:mt-8 max-w-full  lg:w-[80%] md:w-[80%] w-full">
                 {sections[type].map((section, index) => {
                     const accordionKey = `${type}-${index + 1}`;
                     return (

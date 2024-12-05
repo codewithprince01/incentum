@@ -16,34 +16,34 @@ function BusinessLoan({ type, openAccordion, handleAccordionClick }) {
             {
                 heading: "Credit Score",
                 content: "Your credit score is a critical factor in determining your eligibility. It reflects your financial history and reliability.",
-                icon: <BsSpeedometer2 className="w-8 lg:w-8 h-7 lg:h-8" />,
+                icon: <BsSpeedometer2 className="w-7 h-6 lg:w-6  lg:h-6" />,
             },
             {
                 heading: "Income Details",
                 content: "Stable income ensures you have the capacity to repay any financial commitments you make.",
-                icon: <IoDocumentTextOutline className="w-8 lg:w-8 h-7 lg:h-8" />,
+                icon: <IoDocumentTextOutline className="w-7 h-6 lg:w-6  lg:h-6" />,
             },
             {
                 heading: "Employment History",
                 content: "Consistent employment history shows financial reliability and the ability to sustain regular payments.",
-                icon: <IoMdContacts className="w-8 lg:w-8 h-7 lg:h-8" />,
+                icon: <IoMdContacts className="w-7 h-6 lg:w-6  lg:h-6" />,
             },
             {
                 heading: "Personal Details",
                 content: "This ratio measures your ability to manage debts. A lower ratio increases your chances of approval.",
-                icon: <TbListDetails className="w-8 lg:w-8 h-7 lg:h-8" />,
+                icon: <TbListDetails className="w-7 h-6 lg:w-6  lg:h-6" />,
             },
             {
                 heading: "Debt-to-Income Ratio",
                 content: "Your residency status and location may impact your eligibility based on local regulations.",
-                icon: <MdOutlineDataExploration className="w-8 lg:w-8 h-7 lg:h-8" />,
+                icon: <MdOutlineDataExploration className="w-7 h-6 lg:w-6  lg:h-6" />,
             },
         ],
         documents: [
             {
                 heading: "Proof Of Identity",
                 content: "Government-issued identification like a passport, driver's license, or national ID.",
-                icon: <BsSpeedometer2 className="w-8 lg:w-8 h-7 lg:h-8" />,
+                icon: <BsSpeedometer2 className="w-7 h-6 lg:w-6  lg:h-6" />,
             },
             {
                 heading: "Proof Of Address",
@@ -53,22 +53,22 @@ function BusinessLoan({ type, openAccordion, handleAccordionClick }) {
             {
                 heading: "Proof Of Employment",
                 content: "Recent pay slips or an employment letter confirming your position and salary.",
-                icon: <IoMdContacts className="w-8 lg:w-8 h-7 lg:h-8" />,
+                icon: <IoMdContacts className="w-7 h-6 lg:w-6  lg:h-6" />,
             },
             {
                 heading: "Proof Of Income",
                 content: "Bank statements, tax returns, or salary slips to verify your earnings.",
-                icon: <TbListDetails className="w-8 lg:w-8 h-7 lg:h-8" />,
+                icon: <TbListDetails className="w-7 h-6 lg:w-6  lg:h-6" />,
             },
             {
                 heading: "Proof Of Liability",
                 content: "Details about any existing loans or financial obligations.",
-                icon: <MdOutlineDataExploration className="w-8 lg:w-8 h-7 lg:h-8" />,
+                icon: <MdOutlineDataExploration className="w-7 h-6 lg:w-6  lg:h-6"/>,
             },
             {
                 heading: "Vehicle Information",
                 content: "Details of the vehicle to be financed, including make, model, and cost.",
-                icon: <MdOutlineDataExploration className="w-8 lg:w-8 h-7 lg:h-8" />,
+                icon: <MdOutlineDataExploration className="w-7 h-6 lg:w-6  lg:h-6"/>,
             },
         ],
         apply:[
@@ -76,28 +76,28 @@ function BusinessLoan({ type, openAccordion, handleAccordionClick }) {
                 heading: "Select Your Preference",
                 content: "Your credit score is a critical factor in determining your eligibility. It reflects your financial history and reliability.",
                 icon: (
-                    <BsSpeedometer2 className='w-8 lg:w-8 h-7 lg:h-8' />
+                    <BsSpeedometer2 className="w-7 h-6 lg:w-6  lg:h-6" />
                 ),
             },
             {
                 heading: "Gateher Documents",
                 content: "Stable income ensures you have the capacity to repay any financial commitments you make.",
                 icon: (
-                  <IoDocumentTextOutline className='w-8 lg:w-8 h-7 lg:h-8' />
+                  <IoDocumentTextOutline className="w-7 h-6 lg:w-6  lg:h-6" />
                 ),
             },
             {
                 heading: "Complete Application",
                 content: "Consistent employment history shows financial reliability and the ability to sustain regular payments.",
                 icon: (
-                  <IoMdContacts className='w-8 lg:w-8 h-7 lg:h-8' />
+                  <IoMdContacts className="w-7 h-6 lg:w-6  lg:h-6"/>
                 ),
             },
             {
                 heading: "Upload Documents",
                 content: "This ratio measures your ability to manage debts. A lower ratio increases your chances of approval.",
                 icon: (
-                  <TbListDetails className='w-8 lg:w-8 h-7 lg:h-8' />
+                  <TbListDetails className="w-7 h-6 lg:w-6  lg:h-6" />
     
                 ),
             },
@@ -105,28 +105,28 @@ function BusinessLoan({ type, openAccordion, handleAccordionClick }) {
                 heading: "Dont't Wait For Approval",
                 content: "Your residency status and location may impact your eligibility based on local regulations.",
                 icon: (
-                  <MdOutlineDataExploration className='w-8 lg:w-8 h-7 lg:h-8'/>
+                  <MdOutlineDataExploration className="w-7 h-6 lg:w-6  lg:h-6"/>
                 ),
             },
             {
                 heading: "Review Loan Terms",
                 content: "Your residency status and location may impact your eligibility based on local regulations.",
                 icon: (
-                  <MdOutlineDataExploration className='w-8 lg:w-8 h-7 lg:h-8'/>
+                  <MdOutlineDataExploration className="w-7 h-6 lg:w-6  lg:h-6"/>
                 ),
             },
             {
                 heading: "Sign The Agreement",
                 content: "Your residency status and location may impact your eligibility based on local regulations.",
                 icon: (
-                  <MdOutlineDataExploration className='w-8 lg:w-8 h-7 lg:h-8'/>
+                  <MdOutlineDataExploration className="w-7 h-6 lg:w-6  lg:h-6"/>
                 ),
             },
             {
                 heading: "Finalize Your Purchase",
                 content: "Your residency status and location may impact your eligibility based on local regulations.",
                 icon: (
-                  <MdOutlineDataExploration className='w-8 lg:w-8 h-7 lg:h-8'/>
+                  <MdOutlineDataExploration className="w-7 h-6 lg:w-6  lg:h-6"/>
                 ),
             },
         ],
@@ -135,28 +135,28 @@ function BusinessLoan({ type, openAccordion, handleAccordionClick }) {
                 heading: "How Much Time It Will Take?",
                 content: "Your credit score is a critical factor in determining your eligibility. It reflects your financial history and reliability.",
                 icon: (
-                    <BsSpeedometer2 className='w-8 lg:w-8 h-7 lg:h-8' />
+                    <BsSpeedometer2 className="w-7 h-6 lg:w-6  lg:h-6" />
                 ),
             },
             {
                 heading: "How Much Can You Borrow?",
                 content: "Stable income ensures you have the capacity to repay any financial commitments you make.",
                 icon: (
-                  <IoDocumentTextOutline className='w-8 lg:w-8 h-7 lg:h-8' />
+                  <IoDocumentTextOutline className="w-7 h-6 lg:w-6  lg:h-6" />
                 ),
             },
             {
                 heading: "What Will Be The Interest Rate?",
                 content: "Consistent employment history shows financial reliability and the ability to sustain regular payments.",
                 icon: (
-                  <IoMdContacts className='w-8 lg:w-8 h-7 lg:h-8' />
+                  <IoMdContacts className="w-7 h-6 lg:w-6  lg:h-6" />
                 ),
             },
             {
                 heading: "What Will Be Tje Repayment period?",
                 content: "This ratio measures your ability to manage debts. A lower ratio increases your chances of approval.",
                 icon: (
-                  <TbListDetails className='w-8 lg:w-8 h-7 lg:h-8' />
+                  <TbListDetails className="w-7 h-6 lg:w-6  lg:h-6" />
     
                 ),
             },
@@ -164,25 +164,26 @@ function BusinessLoan({ type, openAccordion, handleAccordionClick }) {
                 heading: "And The Processing Charges?",
                 content: "Your residency status and location may impact your eligibility based on local regulations.",
                 icon: (
-                  <MdOutlineDataExploration className='w-8 lg:w-8 h-7 lg:h-8'/>
+                  <MdOutlineDataExploration className="w-7 h-6 lg:w-6  lg:h-6"/>
                 ),
             },
             {
                 heading: "Monthly Instalments?",
                 content: "Your residency status and location may impact your eligibility based on local regulations.",
                 icon: (
-                  <MdOutlineDataExploration className='w-8 lg:w-8 h-7 lg:h-8'/>
+                  <MdOutlineDataExploration className="w-7 h-6 lg:w-6  lg:h-6"/>
                 ),
             },
             {
                 heading: "Any Extra Fees?",
                 content: "Your residency status and location may impact your eligibility based on local regulations.",
                 icon: (
-                  <MdOutlineDataExploration className='w-8 lg:w-8 h-7 lg:h-8'/>
+                  <MdOutlineDataExploration className="w-7 h-6 lg:w-6  lg:h-6"/>
                 ),
             },
         ],
     };
+
 
     const titles = {
         eligibility: "Eligibility",
@@ -225,7 +226,7 @@ function BusinessLoan({ type, openAccordion, handleAccordionClick }) {
                 <p className="text-[18px] md:ml-[10px] text-white lg:text-[18px] font-medium leading-[28px] lg:leading-[25px]">
                     {descriptions[type][1]}
                 </p>
-                <div className="mt-6 lg:mt-8 max-w-full m-auto lg:w-[80%] md:w-[80%] w-full">
+                <div className="mt-6 lg:mt-8 max-w-full lg:w-[80%] md:w-[80%] w-full">
                     {sections[type].map((section, index) => {
                         const accordionKey = `${type}-${index + 1}`;
                         return (
