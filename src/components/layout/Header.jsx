@@ -66,7 +66,7 @@ const Header = () => {
             </div>
           )}
         </div>
-        
+
         <a href="/contact" className="text-white hover:text-[#F5C13D] transition">
           Contact
         </a>
@@ -101,8 +101,12 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <nav className="absolute top-16 left-0 w-full bg-[#010059] text-white shadow-lg md:hidden flex flex-col space-y-6 p-6">
-          <Link to="/HomePage" className="text-white hover:text-[#F5C13D] transition">
+        <nav className="absolute top-16 left-0 w-full bg-[#010059] text-white shadow-lg md:hidden flex flex-col space-y-6 p-6 z-50">
+          <Link
+            to="/HomePage"
+            className="text-white hover:text-[#F5C13D] transition"
+            onClick={() => setIsMenuOpen(false)}
+          >
             Home
           </Link>
           <a
@@ -112,13 +116,47 @@ const Header = () => {
           >
             About
           </a>
-          <a
-            href="/services"
-            className="hover:text-[#F5C13D] transition text-lg"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Services
-          </a>
+          <div className="relative">
+            <button
+              className="hover:text-[#F5C13D] transition text-lg flex items-center justify-between"
+              onClick={toggleServicesDropdown}
+            >
+              Services
+              <FaChevronDown className="ml-2" />
+            </button>
+            {isServicesDropdownOpen && (
+              <div className="bg-gray-800 text-white mt-2 rounded-lg shadow-lg w-full z-50">
+                <a
+                  href="/home-loan"
+                  className="block px-4 py-2 hover:bg-[#F5C13D] hover:text-gray-900 transition"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Home Loan
+                </a>
+                <a
+                  href="/vehicle-loan"
+                  className="block px-4 py-2 hover:bg-[#F5C13D] hover:text-gray-900 transition"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Vehicle Loan
+                </a>
+                <a
+                  href="/personal-loan"
+                  className="block px-4 py-2 hover:bg-[#F5C13D] hover:text-gray-900 transition"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Personal Loan
+                </a>
+                <a
+                  href="/business-loan"
+                  className="block px-4 py-2 hover:bg-[#F5C13D] hover:text-gray-900 transition"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Business Loan
+                </a>
+              </div>
+            )}
+          </div>
           <a
             href="/contact"
             className="hover:text-[#F5C13D] transition text-lg"
@@ -126,12 +164,13 @@ const Header = () => {
           >
             Contact
           </a>
-          <button
-            className="bg-[#F5C13D] px-5 py-2 rounded-lg text-white font-semibold hover:bg-[#F5C13D] transition"
+          <Link
+            to="/Login-Page"
+            className="bg-[#F5C13D] px-5 py-2 rounded-lg text-black font-semibold hover:bg-[#F5C13D] transition"
             onClick={() => setIsMenuOpen(false)}
           >
             Get Started
-          </button>
+          </Link>
         </nav>
       )}
     </header>

@@ -12,6 +12,7 @@ import VehicelLoan from './Pages/loans/vehicleLoan/VehicleLoan';
 import PersonalLoan from './Pages/loans/personalLoan/PersonalLoan';
 import BusinessLoan from './Pages/loans/businessLoan/BusinessLoan';
 import PageOne from './Pages/Forms/vehicleforms/PageOne';
+import PageTwo from './Pages/Forms/vehicleforms/PageTwo';
 import PageFour from './Pages/Forms/vehicleforms/PageFour';
 
 
@@ -32,6 +33,7 @@ function App() {
         <Route path='business-loan' element={<BusinessLoan/>}/>
         <Route path='/HomePage' element={<HomePage/>} />
         <Route path='/presonal-details-formOne' element={<PageOne/>} />
+        <Route path='/presonal-details-formTwo' element={<PageTwo/>} />
         <Route path='/presonal-details-formFour' element={<PageFour/>}/>
         </Route>
       </Routes>
