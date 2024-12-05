@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ScrollToTop from './components/ScrollToTop'; // Import the ScrollToTop component
+import ScrollToTop from './components/ScrollToTop'; 
 import SignupPage from './Pages/authentication/SignupPage';
 import LoginPage from './Pages/authentication/LoginPage';
 import HeroSection from './Pages/homePage/homecomponents/HeroSection';

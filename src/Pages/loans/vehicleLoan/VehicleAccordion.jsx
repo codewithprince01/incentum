@@ -217,15 +217,15 @@ function VehicleAccordion({ type, openAccordion, handleAccordionClick }) {
 
     return (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0 mt-2" id={type}>
-            <div className="mt-[50px] lg:mt-[80px] mx-6 lg:ml-[120px]">
-                <h1 className="text-[40px] lg:text-[55px] font-bold heading">{titles[type]}</h1>
-                <p className="text-[20px] lg:text-[20px] text-white font-medium mt-2 leading-[30px] lg:leading-[35px]">
+            <div className="mt-[10px] lg:mt-[25px] mx-6 lg:ml-[120px]">
+                <h1 className="text-[40px] md:ml-[10px] lg:text-[45px] font-bold heading">{titles[type]}</h1>
+                <p className="ext-[18px] md:ml-[10px] lg:text-[18px] text-white font-medium  leading-[30px] lg:leading-[35px]">
                     {descriptions[type][0]}
                 </p>
-                <p className="text-[20px] text-white lg:text-[20px] font-medium leading-[30px] lg:leading-[30px]">
+                <p className="text-[18px] md:ml-[10px] text-white lg:text-[18px] font-medium leading-[28px] lg:leading-[25px]">
                     {descriptions[type][1]}
                 </p>
-                <div className="mt-8 lg:mt-12">
+                <div className="mt-6 lg:mt-8 max-w-full m-auto lg:w-[80%] md:w-[80%] w-full">
                     {sections[type].map((section, index) => {
                         const accordionKey = `${type}-${index + 1}`;
                         return (
@@ -233,16 +233,16 @@ function VehicleAccordion({ type, openAccordion, handleAccordionClick }) {
                                 key={accordionKey}
                                 open={openAccordion === accordionKey}
                                 className={`rounded-xl mb-6 pb-2 transition-all duration-500 ease-in-out ${openAccordion === accordionKey
-                                    ? "border-b-[6px] border-auButtomColor"
-                                    : "border-b-[6px] border-white"
+                                     ? "border-b-[4px] border-auButtomColor"
+                                : "border-b-[4px] border-white"
                                     } bg-auColor`}
                             >
                                 <AccordionHeader
                                     onClick={() => handleAccordionClick(accordionKey)}
-                                    className="px-6 lg:px-10 pt-6 lg:pt-6 pb-3 font-medium cursor-pointer text-white flex justify-start items-center border-none"
+                                    className="px-6  pt-4  pb-2 font-medium cursor-pointer text-white flex justify-start items-center border-none"
                                 >
                                     <div>{section.icon}</div>
-                                    <h2 className="ml-4 lg:ml-5 text-[19px] lg:text-[26px] font-bold">
+                                    <h2 className="ml-4 lg:ml-5 text-[19px] md:text-[20px] font-bold">
                                         {section.heading}
                                     </h2>
                                 </AccordionHeader>
@@ -253,7 +253,7 @@ function VehicleAccordion({ type, openAccordion, handleAccordionClick }) {
                                         transition: "max-height 0.5s ease-in-out",
                                     }}
                                 >
-                                    <AccordionBody className="px-6 lg:px-16 pb-6 lg:pb-4 text-white text-[20px] lg:text-[22px]">
+                                    <AccordionBody className="px-6 lg:px-16 pb-4 lg:pb-2 text-white text-[20px] lg:text-[17px]">
                                         {section.content}
                                     </AccordionBody>
                                 </div>
@@ -266,7 +266,7 @@ function VehicleAccordion({ type, openAccordion, handleAccordionClick }) {
                 <img
                     src={images[type]}
                     alt={`${titles[type]} Illustration`}
-                    className="mt-[30px] lg:mt-[90px] lg:ml-[130px] w-[370px] h-[320px] lg:w-[500px] lg:h-[400px]  imgBorder my-4 rounded-lg"
+                    className="mt-[30px] lg:mt-[160px] lg:ml-[90px] w-[370px] h-[320px] md:w-[480px] md:h-[380px]  imgBorder my-4 rounded-lg"
                 />
             </div>
         </div>
