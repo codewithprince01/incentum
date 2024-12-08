@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Input from "../../../components/form/Input.jsx";
 import Dropdown from "../../../components/form/Dropdown.jsx";
 import Button from "../../../components/form/Button.jsx";
@@ -165,7 +166,7 @@ export default function PageOne() {
       {/* Right Section */}
       <div className="lg:w-2/3 bg-white mt-8 p-8 py-11 mx-4 rounded-3xl shadow-md">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">
-          Account Set Up
+          Loan Applicaton
         </h1>
 
         <h3 className="text-xl font-medium mt-4 ml-14">
@@ -190,7 +191,9 @@ export default function PageOne() {
           )}
         </div>
         <div className="mt-8">
+          <Link to="/presonal-details-formTwo">
           <Button />
+          </Link>
         </div>
       </div>
     </div>

@@ -3,9 +3,7 @@ import { useDropzone } from 'react-dropzone';
 import { Link } from "react-router-dom";
 import Button from "../../../components/form/Button.jsx";
 
-
-
-const SelfEmployed = () => {
+const Salried = () => {
   // File uploads
   const FileUploader = ({ onDrop }) => {
     const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
@@ -28,18 +26,18 @@ const SelfEmployed = () => {
   };
 
   // Document list
-  const documentList = [ 
-      'PAN Card',	
-      'Aadhar Card',
-      'Firm registration (Shop Act/ Udyog Aadhar/ GST Certificate/Article of Association/ Memorandum of Association, Certificate for Incorporation/Licenses/Others)',	
-      'GSTR for last year',
-      'Last 6/12 Month Current Account Statement',	
-      'Last 12 Month Savings Bank Account Statement',
-      'Existing Loan Account Statements',
-      '2/3 Year ITR & Computation',
-      '2/3 Year Balance Sheets',
-      'NOC /Loan closure statements for loans closed in 1 year',	
-
+  const documentList = [
+    'Pan Card',
+    'Aadhar Card',
+    'Employer ID card',
+    'Joining/Confirmation/Experience Letter',
+    'Last 12 month salary Account Statement',
+    'Existing Loan Account Statement',
+    'Latest 6 month salary slip',
+    '3 year form 16 (part A B) and 26 AS',
+    '3 year ITR and computation',
+    // 'Driving licenses',
+    // 'NOC/Loan close statements for loans closed in one year',
   ];
 
   return (
@@ -59,7 +57,7 @@ const SelfEmployed = () => {
         {/* Steps */}
         
         <h1 className="text-xl font-bold mt-8 text-gray-900  mb-8">
-              3. Upload Documents for Self Employed/ Professionals 
+              3. Upload Documents for Salaried
             </h1>
 
         {/* Document Upload Table */}
@@ -95,4 +93,4 @@ const SelfEmployed = () => {
   );
 };
 
-export default SelfEmployed;
+export default Salried;

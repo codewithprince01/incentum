@@ -13,13 +13,16 @@ import PersonalLoan from './Pages/loans/personalLoan/PersonalLoan';
 import BusinessLoan from './Pages/loans/businessLoan/BusinessLoan';
 import PageOne from './Pages/Forms/vehicleforms/PageOne';
 import PageTwo from './Pages/Forms/vehicleforms/PageTwo';
+import PageThree from './Pages/Forms/vehicleforms/PageThree';
 import PageFour from './Pages/Forms/vehicleforms/PageFour';
+import PageFive from './Pages/Forms/vehicleforms/PageFive';
 
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
+      
       <Routes>
         <Route path='/' element={<Layout/>}>
         <Route index element={<HomePage/>}/>
@@ -34,7 +37,9 @@ function App() {
         <Route path='/HomePage' element={<HomePage/>} />
         <Route path='/presonal-details-formOne' element={<PageOne/>} />
         <Route path='/presonal-details-formTwo' element={<PageTwo/>} />
+        <Route path='/presonal-details-formThree' element={<PageThree/>}/>
         <Route path='/presonal-details-formFour' element={<PageFour/>}/>
+        <Route path='/presonal-details-formFive' element={<PageFive/>}/>
         </Route>
       </Routes>
     </Router>

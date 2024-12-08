@@ -6,11 +6,11 @@ const BankingSection = () => {
   return (
     <>
       {/* Section Content */}
-      <section className="flex flex-col items-center justify-center bg-gradient-to-r from-blue-800 to-[#0a1a2a] text-white rounded-3xl py-10 px-6 sm:py-14 sm:px-12 lg:px-16 max-w-7xl h-auto mx-auto">
+      <section className="flex flex-col items-center justify-center bg-gradient-to-r from-blue-800 to-[#0a1a2a] text-white rounded-3xl  px-6 sm:py-12 sm:px-12 lg:px-16 max-w-7xl h-auto mx-auto">
         <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mb-4 text-center">
           Enjoy A Banking Experience That Is Swift, Versatile, And Open.
         </h2>
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-center mb-6">
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-center mb-2">
           Join now with <span className="font-semibold">INCENTUM</span> to get the
           latest Banking Solutions and start mining now.
         </p>
