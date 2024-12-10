@@ -39,6 +39,7 @@ export default function LoginPage() {
       </div>
 
       {/* Right Section */}
+      <form>
       <div className="flex items-center justify-center h-5/6 p-6 bg-opacity-80">
         <div className="w-full max-w-md p-6 bg-white bg-opacity-10 backdrop-blur-md border border-gray-700 rounded-lg shadow-lg">
           <h2 className="text-gray-200 text-3xl font-bold mb-4">Login</h2>
@@ -90,6 +91,7 @@ export default function LoginPage() {
           </form>
         </div>
       </div>
+      </form>
     </div>
   );
 }
