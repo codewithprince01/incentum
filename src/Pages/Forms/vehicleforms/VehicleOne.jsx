@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function PageFive() {
+export default function VehicleOne() {
   return (
     <div>
       

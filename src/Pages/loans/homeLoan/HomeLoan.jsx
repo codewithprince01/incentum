@@ -44,7 +44,10 @@ export default function HomeLoan() {
             You are a click away from your dream car. Are you ready for the
             drive of your dreams?
           </h2>
-        <Button/>
+          <Link to={'/home-details-HomeOne'}>
+          <Button/>
+          </Link>
+        
         </div>
         <div className=" justify-center hidden lg:block items-center  lg:mt-[70px]">
           <img

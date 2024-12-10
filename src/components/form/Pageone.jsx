@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import Input from "../../../components/form/Input.jsx";
-import Dropdown from "../../../components/form/Dropdown.jsx";
-import Button from "../../../components/form/Button.jsx";
+import Input from "./Input.jsx";
+import Dropdown from "./Dropdown.jsx";
+
 
 export default function PageOne() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -189,11 +188,6 @@ export default function PageOne() {
               </button>
             </div>
           )}
-        </div>
-        <div className="mt-8">
-          <Link to="/presonal-details-formTwo">
-          <Button />
-          </Link>
         </div>
       </div>
     </div>

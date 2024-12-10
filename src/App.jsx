@@ -11,11 +11,12 @@ import HomeLoan from './Pages/loans/homeLoan/HomeLoan';
 import VehicelLoan from './Pages/loans/vehicleLoan/VehicleLoan';
 import PersonalLoan from './Pages/loans/personalLoan/PersonalLoan';
 import BusinessLoan from './Pages/loans/businessLoan/BusinessLoan';
-import PageOne from './Pages/Forms/vehicleforms/PageOne';
-import PageTwo from './Pages/Forms/vehicleforms/PageTwo';
-import PageThree from './Pages/Forms/vehicleforms/PageThree';
-import PageFour from './Pages/Forms/vehicleforms/PageFour';
-import PageFive from './Pages/Forms/vehicleforms/PageFive';
+
+import PageFive from './Pages/Forms/vehicleforms/VehicleFive';
+import HomeOne from './Pages/Forms/homeforms/Homeone';
+import HomeTwo from './Pages/Forms/homeforms/HomeTwo';
+import HomeThree from './Pages/Forms/homeforms/HomeThree';
+import HomeFour from './Pages/Forms/homeforms/HomeFour';
 
 
 function App() {
@@ -35,11 +36,12 @@ function App() {
         <Route path='personal-loan' element={<PersonalLoan/>}/>
         <Route path='business-loan' element={<BusinessLoan/>}/>
         <Route path='/HomePage' element={<HomePage/>} />
-        <Route path='/presonal-details-formOne' element={<PageOne/>} />
-        <Route path='/presonal-details-formTwo' element={<PageTwo/>} />
-        <Route path='/presonal-details-formThree' element={<PageThree/>}/>
-        <Route path='/presonal-details-formFour' element={<PageFour/>}/>
+        
         <Route path='/presonal-details-formFive' element={<PageFive/>}/>
+        <Route path='/home-details-HomeOne' element={<HomeOne/>} />
+        <Route path='/home-details-HomeTwo' element={<HomeTwo/>} />
+        <Route path='/home-details-HomeThree' element={<HomeThree/>}/>
+        <Route path='/home-details-HomeFour' element={<HomeFour/>}/>
         </Route>
       </Routes>
     </Router>

@@ -23,8 +23,8 @@ export default function Button() {
                 </svg>
               </Link>
             </button>
-            <button>
-              <Link to={'/presonal-details-formOne'} className="flex text-white text-lg sm:text-xl border-[2px] sm:border-[3px] bg-primary border-primary hover:bg-blue-800 hover:border-blue-800 px-4 sm:px-2 py-2 sm:py-1 rounded-xl  items-center">
+            <button
+               className="flex text-white text-lg sm:text-xl border-[2px] sm:border-[3px] bg-primary border-primary hover:bg-blue-800 hover:border-blue-800 px-4 sm:px-2 py-2 sm:py-1 rounded-xl  items-center">
                 Contact Sales
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ export default function Button() {
                     d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
                   />
                 </svg>
-              </Link>
+              
             </button>
           </div>
   )

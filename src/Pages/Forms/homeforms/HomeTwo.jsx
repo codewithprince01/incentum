@@ -4,7 +4,7 @@ import Input from "../../../components/form/Input.jsx";
 import Dropdown from "../../../components/form/Dropdown.jsx";
 import Button from "../../../components/form/Button.jsx";
 
-const PageTwo = () => {
+const HomeTwo = () => {
   const [employmentType, setEmploymentType] = useState("");
   const [openDropdown, setOpenDropdown] = useState(null);
 
@@ -241,9 +241,9 @@ const PageTwo = () => {
           <Link
             to={
               employmentType === "Salaried"
-                ? "/presonal-details-formThree"
+                ? "/home-details-HomeThree"
                 : employmentType === "Self-Employed"
-                ? "/presonal-details-formFour"
+                ? "/home-details-HomeFour"
                 : "#"
             }
           >
@@ -256,4 +256,4 @@ const PageTwo = () => {
   );
 };
 
-export default PageTwo;
+export default HomeTwo;
