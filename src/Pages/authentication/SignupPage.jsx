@@ -106,16 +106,27 @@ export default function SignupPage() {
             >
               Signup
             </button>
-            <div className="flex justify-center mt-6">
-              <p className="text-gray-400 text-lg">
-                Already registered?{" "}
-                <Link
-                  to="/login-page"
-                  className="text-blue-400 underline hover:text-blue-500"
-                >
-                  Login
-                </Link>
-              </p>
+            <div className="flex items-center justify-center my-7">
+              <div className="w-1/3 border-t border-gray-500"></div>
+              <span className="mx-4 text-gray-500 text-lg sm:text-xl font-bold">
+                Or
+              </span>
+              <div className="w-1/3 border-t border-gray-500"></div>
+            </div>
+            <p className="text-center text-gray-400 text-lg mt-6">
+              Already registered?{" "}
+              <Link
+                to="/login-page"
+                className="text-blue-400 underline hover:text-blue-500"
+              >
+                Login
+              </Link>
+            </p>
+             {/* Footer Links */}
+             <div className="flex justify-center gap-4 text-gray-500 text-sm sm:text-base mt-7">
+              <Link to="#">Terms & Conditions</Link>
+              <Link to="#">Support</Link>
+              <Link to="#">Customer Care</Link>
             </div>
           </form>
         </div>
