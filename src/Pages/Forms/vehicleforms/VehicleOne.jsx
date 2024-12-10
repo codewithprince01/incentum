@@ -8,7 +8,7 @@ export default function VehicleOne() {
     <div>
       <PageOne/>
        <div className="mt-8">
-          <Link to="/Home-details-HomeTwo">
+          <Link to="/vehicle-details-VehicleTwo">
           <Button />
           </Link>
         </div>

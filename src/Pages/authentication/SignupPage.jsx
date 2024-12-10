@@ -82,7 +82,7 @@ export default function SignupPage() {
               type="submit"
               className="w-full py-3 bg-blue-600 text-white text-lg font-bold rounded-lg hover:bg-blue-700 transition"
             >
-              Signup
+            Verify
             </button>
              {/* Divider */}
              <div className="flex items-center justify-center my-7">

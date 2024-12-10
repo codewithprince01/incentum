@@ -17,6 +17,8 @@ import HomeTwo from './Pages/Forms/homeforms/HomeTwo';
 import HomeThree from './Pages/Forms/homeforms/HomeThree';
 import HomeFour from './Pages/Forms/homeforms/HomeFour';
 import VehicleOne from './Pages/Forms/vehicleforms/VehicleOne';
+import VehicleTwo from './Pages/Forms/vehicleforms/VehicleTwo';
+
 
 function App() {
   return (
@@ -41,6 +43,7 @@ function App() {
         <Route path='/home-details-HomeThree' element={<HomeThree/>}/>
         <Route path='/home-details-HomeFour' element={<HomeFour/>}/>
         <Route path='/vehicle-details-VehicleOne' element={<VehicleOne/>} />
+        <Route path='/vehicle-details-VehicleTwo' element={<VehicleTwo/>} />
 
         </Route>
       </Routes>
