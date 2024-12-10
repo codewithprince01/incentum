@@ -11,13 +11,12 @@ import HomeLoan from './Pages/loans/homeLoan/HomeLoan';
 import VehicelLoan from './Pages/loans/vehicleLoan/VehicleLoan';
 import PersonalLoan from './Pages/loans/personalLoan/PersonalLoan';
 import BusinessLoan from './Pages/loans/businessLoan/BusinessLoan';
-
 import PageFive from './Pages/Forms/vehicleforms/VehicleFive';
 import HomeOne from './Pages/Forms/homeforms/Homeone';
 import HomeTwo from './Pages/Forms/homeforms/HomeTwo';
 import HomeThree from './Pages/Forms/homeforms/HomeThree';
 import HomeFour from './Pages/Forms/homeforms/HomeFour';
-
+import VehicleOne from './Pages/Forms/vehicleforms/VehicleOne';
 
 function App() {
   return (
@@ -36,12 +35,13 @@ function App() {
         <Route path='personal-loan' element={<PersonalLoan/>}/>
         <Route path='business-loan' element={<BusinessLoan/>}/>
         <Route path='/HomePage' element={<HomePage/>} />
-        
         <Route path='/presonal-details-formFive' element={<PageFive/>}/>
         <Route path='/home-details-HomeOne' element={<HomeOne/>} />
         <Route path='/home-details-HomeTwo' element={<HomeTwo/>} />
         <Route path='/home-details-HomeThree' element={<HomeThree/>}/>
         <Route path='/home-details-HomeFour' element={<HomeFour/>}/>
+        <Route path='/vehicle-details-VehicleOne' element={<VehicleOne/>} />
+
         </Route>
       </Routes>
     </Router>
