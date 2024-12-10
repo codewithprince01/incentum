@@ -18,6 +18,7 @@ import HomeThree from './Pages/Forms/homeforms/HomeThree';
 import HomeFour from './Pages/Forms/homeforms/HomeFour';
 import VehicleOne from './Pages/Forms/vehicleforms/VehicleOne';
 import VehicleTwo from './Pages/Forms/vehicleforms/VehicleTwo';
+import SignupVerify from './Pages/authentication/SignupVerify';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
         <Route path='/home-details-HomeFour' element={<HomeFour/>}/>
         <Route path='/vehicle-details-VehicleOne' element={<VehicleOne/>} />
         <Route path='/vehicle-details-VehicleTwo' element={<VehicleTwo/>} />
+        <Route path='/signup-verify' element={<SignupVerify />} />
 
         </Route>
       </Routes>
