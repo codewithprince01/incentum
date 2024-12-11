@@ -169,8 +169,9 @@ export default function PageOne() {
         </h1>
 
         <h3 className="text-xl font-medium mt-4 ml-14">
-          Set up your account for your loan Application
+        Hey ! let us know a bit about you !!
         </h3>
+        <div className="ml-9 mt-4 form-step-one "></div>
 
         <div>
           {Array.from({ length: applicantCount }, (_, index) => (
